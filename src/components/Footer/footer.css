@@ -2,7 +2,17 @@
     text-align: center;
     color: rgb(0, 0, 0);
     background-color: rgb(149, 146, 146);
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+    padding-bottom: 0%;
     width: 100vw;
+}
+
+hr{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+p{
+    margin-bottom: 0%;
 }
