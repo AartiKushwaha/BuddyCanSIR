@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <div className="row mt-4">
+      <div className="row mt-4 main">
         <div className="col-8">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec

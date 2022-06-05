@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+.row {
+  margin: 2rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.aboutUs-img {
+  border-radius: 49%;
+  border : 5px solid blue;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
