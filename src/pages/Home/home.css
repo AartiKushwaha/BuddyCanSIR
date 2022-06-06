@@ -24,6 +24,19 @@ body{
   }
 }
 
+@media(max-width: 1240px){
+  .info{
+      padding-left: 0%;
+      width: max-content;
+  }
+  .CenteredImg{
+      padding-top: 2rem;
+      display: block;
+      margin: auto 0 auto 0;
+  }
+}
+
+
 .aboutUs-img {
   /* border-radius: 49%; */
   /* border : 5px solid #d8d8e7; */
