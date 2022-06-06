@@ -9,7 +9,14 @@ export default function Home() {
     <>
       <Navigation />
       <div className="row mt-4 main">
-        <div className="col-8">
+        <div className="col-4 col-md-4 col-sm-6">
+          <img
+            className="aboutUs-img"
+            src="https://images.freeimages.com/images/small-previews/155/bridge-1559052.jpg"
+            alt="img"
+          />
+        </div>
+        <div className="col-8 col-md-8 col-sm-6">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             pulvinar eros. Nunc ut nulla placerat, varius dui ac, egestas leo.
@@ -28,20 +35,13 @@ export default function Home() {
             facilisis lacus feugiat nec.
           </p>
         </div>
-        <div className="col-4">
-          <img
-            className="aboutUs-img"
-            src="https://images.freeimages.com/images/small-previews/155/bridge-1559052.jpg"
-            alt="img"
-          />
-        </div>
       </div>
-      
+
       <div className="app">
-      <header className="app-header">
-        <Testimonials />
-      </header>
-    </div>
+        <header className="app-header">
+          <Testimonials />
+        </header>
+      </div>
       <Footer />
     </>
   );
