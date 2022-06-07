@@ -1,0 +1,131 @@
+.login{
+    height: 90vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #ff44007c, #7cc80385);
+    padding-top: 50px;
+    z-index: -999;
+}
+
+.login-container {
+    margin: auto;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.728);
+    height: 70vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.174);
+    padding: 40px 60px;
+    z-index: 1;
+}
+
+.circle1 {
+    height: 400px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.272);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.272);
+    position: fixed;
+    bottom: 0;
+    right: -200px;
+    border-radius: 50%;
+    z-index: 0;
+}
+.circle2 {
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.272);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.272);
+    position: fixed;
+    bottom: 15%;
+    left: 25%;
+    border-radius: 50%;
+    z-index: 0;
+}
+.circle3 {
+    height: 80px;
+    width: 80px;
+    background-color: rgba(255, 255, 255, 0.272);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.272);
+    position: fixed;
+    top: 20%;
+    right: 20%;
+    border-radius: 50%; 
+    z-index: 0;   
+}
+.circle4 {
+    height: 400px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.272);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.272);
+    position: fixed;
+    top: -150px;
+    left: -150px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.login-heading {
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type=email], input[type=password], input[type=submit] {
+    width: 100%;
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 15px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #3AB255;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.disclaimer {
+    font-size: 10px;
+    color: red;
+}
+
+.login-button {
+    width: 100%;
+    background-color: #3AB255;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.login-form {
+    margin: 10px 0;
+}
+
+.login-label {
+    margin-top: 10px;
+}
+
+@media (min-width: 564px) and (max-width: 1024px){
+    .login-container {
+        width: 50%;
+    }
+}
+@media (min-width: 426px) and (max-width: 564px){
+    .login-container {
+        width: 70%;
+        height: 80vh;
+    }
+}
+@media (max-width: 425px){
+    .login {
+        padding-top: 30px;
+    }
+    .login-container {
+        width: 90%;
+        padding: 20px 30px;
+    }
+    .circle1, .circle2, .circle3, .circle4 {
+        display: none;
+    }
+}
