@@ -6,6 +6,7 @@ import Request from "./pages/Request/Request";
 import Profile from "./pages/Profile/Profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import AdminLogin from "./pages/AdminLogin/AdminLogin";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/login" element={<Login />} />
+        <Route exact path="/adminlogin" element={<AdminLogin />} />
         <Route exact path="/admin" element={<Admin />} />
         <Route exact path="/request" element={<Request />} />
         <Route exact path="/profile" element={<Profile />} />
