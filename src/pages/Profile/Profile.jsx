@@ -9,6 +9,7 @@ export default function Profile() {
         <Navigation />
         <section style={{backgroundColor: '#eee'}}>
         <div className="container py-5 mt-5">
+          <h1 className="heading text-center">Update Profile</h1>
           <div className="row">
             <div className="col-lg-4">
               <div className="card mb-4">
@@ -61,13 +62,17 @@ export default function Profile() {
                     </div>
                   </div>
                   <hr />
-                 
+                  
                 </div>
+                <a href="#" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-pencil"></span> Edit
+        </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+        
         
         <Footer />
         </>
