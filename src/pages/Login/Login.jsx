@@ -24,7 +24,7 @@ export default function Login() {
                         <p className="disclaimer">* Password is your uid.</p>
                         <input type="submit" value="Login" />
                     </form>
-                    <a href="#">Forgot Password?</a>
+                    <a href="/">Forgot Password?</a>
                     <hr style={{margin: "10px 0"}} />
                     <button className="login-button">Login using Google</button>
                     <br />
