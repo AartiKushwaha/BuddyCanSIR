@@ -1,5 +1,4 @@
 import React from "react";
-import "./AdminLogin.css";
 import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
 
@@ -29,7 +28,7 @@ export default function AdminLogin() {
               placeholder="Enter your password"
             />
             <br />
-            <input type="submit" value="Login" />
+            <input className="login-button" type="submit" value="Login" />
           </form>
           <a href="/">Forgot Password?</a>
           <hr style={{ margin: "10px 0" }} />

@@ -22,7 +22,7 @@ export default function Login() {
                         <input type="password" name="password" placeholder="Enter your password"/>
                         <br />
                         <p className="disclaimer">* Password is your uid.</p>
-                        <input type="submit" value="Login" />
+                        <input className="login-button" type="submit" value="Login" />
                     </form>
                     <a href="/">Forgot Password?</a>
                     <hr style={{margin: "10px 0"}} />
