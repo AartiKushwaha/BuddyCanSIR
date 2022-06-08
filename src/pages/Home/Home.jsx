@@ -1,9 +1,8 @@
 import React from "react";
 import "./home.css";
-// import Navigation from "../../components/Navigation/Navigation";
+import Navigation from "../../components/Navigation/Navigation";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import Navigation from "../../components/Navigation/Navigation";
 import Translator from "../../components/Translator/Translator";
 import AdminLogin from "../AdminLogin/AdminLogin";
 // import Testimonials from "../../components/Testimonials/Testimonials";
@@ -12,86 +11,7 @@ export default function Home() {
   return (
     <>
     <Navigation/>
-      {/* Navigation*/}
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container-fluid">
-          <a href="/" className="navbar-brand">
-            <img
-              src="https://i.pinimg.com/736x/6e/a9/d8/6ea9d8d5ac75d9c5d7a2a567c1e2bbdf.jpg"
-              height="28"
-              alt="CoolBrand"
-            />
-          </a>
-          <button
-            type="button"
-            className="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarCollapse">
-            <div className="navbar-nav">
-              <Link className="nav-item nav-link active" to="/">
-                {" "}
-                <h4>BuddyCanSIR</h4>{" "}
-              </Link>
-              {/* <Link className="nav-item nav-link" to="/" > Testimonials </Link>  */}
-              {/* <Link className="nav-item nav-link" to="/" > Contact Us </Link>  */}
-            </div>
-            <div className="navbar-nav ms-auto">
-              <Link className="nav-item nav-link dropdown" to="/">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="/"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  English
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="/">
-                      Hindi
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/">
-                      Marathi
-                    </a>
-                  </li>
-                </ul>
-              </Link>
-              <Link className="nav-item nav-link dropdown" to="/">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="/"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Login
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="" onClick={AdminLogin}>
-                      Admin Login
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="../../../Login.jsx">
-                      User Login
-                    </a>
-                  </li>
-                </ul>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      {/* Navigation */}
 
       {/* Masthead*/}
       <header className="masthead">

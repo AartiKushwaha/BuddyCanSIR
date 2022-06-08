@@ -1,7 +1,6 @@
 .admin-container {
     height: 100%;
     width: 100vw;
-    background-image: linear-gradient(to bottom right, #ff44007c, #7cc80385);
     padding: 30px 0;
 }
 
@@ -11,11 +10,6 @@
 
 .row {
     margin: 5px;
-}
-
-.single-card {
-    margin: 10px 0;
-    box-shadow: 5px 5px 20px 5px #00000040;
 }
 
 .filter-subheading {
@@ -50,12 +44,12 @@ label {
 
 /* ---Sidebar css */
 .text-primary{
-    color: #5a8dee!important;
+    color: #3AB255!important;
 }
 
 .btn-primary {
-    border-color: #5a8dee !important;
-    background-color: #5a8dee !important;
+    border-color: #3AB255 !important;
+    background-color: #3AB255!important;
     color: #fff;
 }
 

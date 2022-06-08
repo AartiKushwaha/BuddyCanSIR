@@ -63,7 +63,8 @@ export default function Request() {
 
     if (isValid) {
       document.getElementById("submitButton").removeAttribute("disabled");
-      document.getElementById("submitButton").style.background = "#3d98c2";
+      document.getElementById("submitButton").style.background = "#3AB255";
+      document.getElementById("submitButton").style.cursor = "pointer";
     } else {
       document.getElementById("submitButton").setAttribute("disabled", true);
     }
@@ -82,7 +83,8 @@ export default function Request() {
 
     if (isValidForm) {
       document.getElementById("nextButton").removeAttribute("disabled");
-      document.getElementById("nextButton").style.background = "#3d98c2";
+      document.getElementById("nextButton").style.background = "#3AB255";
+      document.getElementById("nextButton").style.cursor = "pointer";
     } else {
       document.getElementById("nextButton").setAttribute("disabled", true);
     }

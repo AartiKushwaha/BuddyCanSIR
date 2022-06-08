@@ -2,6 +2,8 @@ import React,{useState} from "react";
 import "./profile.css";
 import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
 
 export default function Profile() {
     return(
@@ -18,7 +20,7 @@ export default function Profile() {
                   <h5 className="my-3">John Smith</h5>
                   <h6 className="uid">UID</h6>
                   <form className="uploadImage">
-                    <label>Upload Profile Image</label>
+                    <label className="update-profile">Upload Profile Image</label>
                     <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" hidden/>
                   </form>
                   {/*<p className="text-muted mb-1">example@example.com</p>*/}
@@ -104,9 +106,10 @@ export default function Profile() {
                   <hr />
                 </div>
                 <div className="editButton">
-                          <a href="#" className="btn btn-info btn-lg">
-                    <span className="glyphicon glyphicon-pencil"></span> Edit
-                            <img className="img-short" src={require("../../assets/img/editIcon.png")} alt="..."/>
+                          <a href="#" className="btn edit-btn">
+                    <span className="glyphicon glyphicon-pencil"></span> Edit &nbsp;&nbsp;
+                    <FontAwesomeIcon icon={faPenToSquare}  />
+                            {/* <img className="img-short" src={require("../../assets/img/editIcon.png")} alt="..."/> */}
                   </a>
                 </div>
               </div>
