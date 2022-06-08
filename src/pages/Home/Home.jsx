@@ -3,11 +3,15 @@ import "./home.css";
 // import Navigation from "../../components/Navigation/Navigation";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import Navigation from "../../components/Navigation/Navigation";
+import Translator from "../../components/Translator/Translator";
+import AdminLogin from "../AdminLogin/AdminLogin";
 // import Testimonials from "../../components/Testimonials/Testimonials";
 
 export default function Home() {
   return (
     <>
+    <Navigation/>
       {/* Navigation*/}
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
@@ -73,12 +77,12 @@ export default function Home() {
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="/AdminLogin">
+                    <a class="dropdown-item" href="" onClick={AdminLogin}>
                       Admin Login
                     </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="/Login">
+                    <a class="dropdown-item" href="../../../Login.jsx">
                       User Login
                     </a>
                   </li>
@@ -116,11 +120,11 @@ export default function Home() {
       {/* Image Showcases*/}
       <section className="showcase">
         <div className="container-fluid p-0">
-          <div className="row g-0 row1">
+          <div className="row g-0 row1 py-4">
             <div className="col-lg-6 order-lg-2 text-white showcase-img img-custom">
               <img
                 src="https://www.stjudechild.org/images/what/1wt.jpg"
-                class="img-fluid rounded"
+                className="img-fluid rounded-circle"
                 alt="img"
               ></img>
             </div>
@@ -136,11 +140,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="row g-0">
+          <div className="row g-0 py-4">
             <div className="col-lg-6 text-white showcase-img">
               <img
                 src="https://www.stjudechild.org/images/what/8wt.jpg"
-                class="img-fluid rounded"
+                className="img-fluid rounded-circle"
                 alt="img"
               ></img>
             </div>
@@ -157,11 +161,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="row g-0">
-            <div className="col-lg-6 order-lg-2 text-white showcase-img">
+          <div className="row g-0 py-4 ">
+            <div className="col-lg-6 order-lg-2 text-white showcase-img ">
               <img
                 src="https://www.stjudechild.org/images/what/5wt.jpg"
-                class="img-fluid rounded"
+                className="img-fluid rounded-circle"
                 alt="img"
               ></img>
             </div>
