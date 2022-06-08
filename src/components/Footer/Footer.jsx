@@ -1,6 +1,11 @@
 import React from "react";
 import "./footer.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGooglePlusG } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
     return(
@@ -46,7 +51,7 @@ export default function Footer() {
                         </div>
                         <div className="single-cta">
                             {/* <i className="fas fa-map-marker-alt"></i> */}
-                            <FontAwesomeIcon icon="fa-solid fa-map-marker-alt" className="i" />
+                            <FontAwesomeIcon icon={faMapMarkerAlt} className="i" />
                             {/* <i class="fa-solid fa-location-dot"></i> */}
                             <div className="cta-text">
                                 <h4>Find us</h4>
@@ -60,7 +65,7 @@ export default function Footer() {
                         </div>
                         <div className="single-cta">
                             {/* <i className="fas fa-phone"></i> */}
-                            <FontAwesomeIcon icon="fas fa-phone" className="i" />
+                            <FontAwesomeIcon icon={faPhone} className="i" />
                             <div className="cta-text">
                                 <h4>Call us</h4>
                                 <span>+91 022 6666 3152</span>
@@ -68,7 +73,7 @@ export default function Footer() {
                         </div>
                         <div className="single-cta">
                             {/* <i className="far fa-envelope-open"></i> */}
-                            <FontAwesomeIcon icon="far fa-envelope-open" className="i" />
+                            <FontAwesomeIcon icon={faEnvelopeOpen} className="i" />
                             {/* <i class="fa-regular fa-envelope-open"></i> */}
                             <div className="cta-text">
                                 <h4>Mail us</h4>
@@ -80,9 +85,9 @@ export default function Footer() {
             </div>
             <div className="footer-social-icon">
                 <h3>Follow Us</h3>
-                <a href="#!"><FontAwesomeIcon icon="fab fa-facebook-f" className="facebook-bg i" /></a>
-                <a href="#!"><FontAwesomeIcon icon="fab fa-twitter" className="twitter-bg i" /></a>
-                <a href="#!"><FontAwesomeIcon icon="fab fa-google-plus-g" className="google-bg i" /></a>
+                <a href="#!"><FontAwesomeIcon icon={faFacebookF} className="facebook-bg i" /></a>
+                <a href="#!"><FontAwesomeIcon icon={faTwitter} className="twitter-bg i" /></a>
+                <a href="#!"><FontAwesomeIcon icon={faGooglePlusG} className="google-bg i" /></a>
             </div>
         </div>
     </div>
