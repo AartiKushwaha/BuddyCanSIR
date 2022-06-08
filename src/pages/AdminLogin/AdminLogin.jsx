@@ -32,8 +32,6 @@ export default function AdminLogin() {
           </form>
           <a href="/">Forgot Password?</a>
           <hr style={{ margin: "10px 0" }} />
-          <button className="login-button">Login using Google</button>
-          <br />
           <button className="login-button">Login using OTP</button>
         </div>
         <div className="circle1"></div>
