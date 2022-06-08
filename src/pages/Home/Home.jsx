@@ -230,11 +230,11 @@ export default function Home() {
         </div>
       </section>
       {/* Call to Action*/}
-      <section className="call-to-action text-white text-center" id="signup">
+      {/* <section className="call-to-action text-white text-center" id="signup">
         <div className="container position-relative">
           <div className="row justify-content-center">
             <div className="col-xl-6">
-              <h2 className="mb-4">Ready to get started? Sign up now!</h2>
+              <h2 className="mb-4">Ready to get started? Sign up now!</h2> */}
               {/* Signup form*/}
               {/* * * * * * * * * * * * * * * **/}
               {/* * * SB Forms Contact Form * **/}
@@ -243,13 +243,13 @@ export default function Home() {
               {/* To make this form functional, sign up at*/}
               {/* https://startbootstrap.com/solution/contact-forms*/}
               {/* to get an API token!*/}
-              <form
+              {/* <form
                 className="form-subscribe"
                 id="contactFormFooter"
                 data-sb-form-api-token="API_TOKEN"
-              >
+              > */}
                 {/* Email address input*/}
-                <div className="row">
+                {/* <div className="row">
                   <div className="col">
                     <input
                       className="form-control form-control-lg"
@@ -280,12 +280,12 @@ export default function Home() {
                       Submit
                     </button>
                   </div>
-                </div>
+                </div> */}
                 {/* Submit success message*/}
                 {/**/}
                 {/* This is what your users will see when the form*/}
                 {/* has successfully submitted*/}
-                <div className="d-none" id="submitSuccessMessage">
+                {/* <div className="d-none" id="submitSuccessMessage">
                   <div className="text-center mb-3">
                     <div className="fw-bolder">Form submission successful!</div>
                     <p>To activate this form, sign up at</p>
@@ -296,12 +296,12 @@ export default function Home() {
                       https://startbootstrap.com/solution/contact-forms
                     </a>
                   </div>
-                </div>
+                </div> */}
                 {/* Submit error message*/}
                 {/**/}
                 {/* This is what your users will see when there is*/}
                 {/* an error submitting the form*/}
-                <div className="d-none" id="submitErrorMessage">
+                {/* <div className="d-none" id="submitErrorMessage">
                   <div className="text-center text-danger mb-3">
                     Error sending message!
                   </div>
@@ -310,9 +310,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Footer*/}
-      <footer className="footer bg-light">
+      {/* <footer className="footer bg-light">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 h-100 text-center text-lg-start my-auto">
@@ -358,7 +358,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
       {/* Bootstrap core JS*/}
       {/* Core theme JS*/}
       {/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/}
