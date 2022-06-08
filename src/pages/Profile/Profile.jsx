@@ -18,8 +18,8 @@ export default function Profile() {
                   <h5 className="my-3">John Smith</h5>
                   <br />
                   <form className="uploadImage">
-                    <h6>Upload Profile Image</h6>
-                    <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" />
+                    <label>Upload Profile Image</label>
+                    <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" hidden/>
                   </form>
                   {/*<p className="text-muted mb-1">example@example.com</p>*/}
                   {/*<p className="text-muted mb-1">(097) 234-5678</p>*/}
