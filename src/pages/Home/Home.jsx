@@ -188,45 +188,42 @@ export default function Home() {
         <div className="container">
           <h2 className="mb-5">What people are saying...</h2>
           <div className="row">
-            <div className="col-lg-4">
+            <div className="col-lg-3">
               <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img
-                  className="img-fluid rounded-circle mb-3"
-                  src="../assets/img/testimonials-1.jpg"
-                  alt="..."
-                />
-                <h5>Margaret E.</h5>
-                <p className="font-weight-light mb-0">
-                  "This is fantastic! Thanks so much guys!"
-                </p>
+                <img className="img-fluid rounded-circle mb-3" src={require("../../assets/img/venu.jpg")} alt="..." />
+                <h5>Venu Nair</h5>
+                <h6>(MD, Marks and Spencer Reliance, India)</h6>
+                <p className="font-weight-light mb-0">"A very Inspiring hour with Ms.Banerji. What a fantastic set of activites being done here
+                  in a extremely professional manner.
+                  Truly worthy of huge appreciation and respect. Made my Day"</p>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-3">
               <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img
-                  className="img-fluid rounded-circle mb-3"
-                  src="../assets/img/testimonials-2.jpg"
-                  alt="..."
-                />
-                <h5>Fred S.</h5>
-                <p className="font-weight-light mb-0">
-                  "Bootstrap is amazing. I've been using it to create lots of
-                  super nice landing pages."
-                </p>
+                <img className="img-fluid rounded-circle mb-3" src={require("../../assets/img/andrea.jpg")} alt="..." />
+                <h5>Andrea Hamilton</h5>
+                <h6>(Philantropy & Social Impact, Generation Capital)</h6>
+                <p className="font-weight-light mb-0">"Very well maintained, hygiene and patients are kept under very good care. Hospitable
+                  Staff."</p>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-3">
               <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img
-                  className="img-fluid rounded-circle mb-3"
-                  src="../assets/img/testimonials-3.jpg"
-                  alt="..."
-                />
-                <h5>Sarah W.</h5>
-                <p className="font-weight-light mb-0">
-                  "Thanks so much for making these free resources available to
-                  us!"
-                </p>
+                <img className="img-fluid rounded-circle mb-3" src={require("../../assets/img/rk.jpg")} alt="..." />
+                <h5>RK Krishna Kumar</h5>
+                <h6>(Retd. Director, Tata Sons)</h6>
+                <p className="font-weight-light mb-0">"The world is a dark and forbidding place. A visit to this centre has lit a light in my
+                  heart. I can only thank all the people here for giving me this unique privilege of being
+                  here this morning. There is so much hope and goodness here."</p>
+              </div>
+            </div>
+            <div className="col-lg-3">
+              <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+                <img className="img-fluid rounded-circle mb-3" src={require("../../assets/img/angali.jpg")} alt="..." />
+                <h5>Sachin & Anjali Tendulkar</h5>
+                <h6>(Philanthropist)</h6>
+                <p className="font-weight-light mb-0">"It was an enlightening visit. We were most impressed by everything!
+                  It was an enlightening visit. We were most impressed by everything! "</p>
               </div>
             </div>
           </div>
