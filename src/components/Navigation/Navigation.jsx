@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Translator from "../Translator/Translator";
 import "./navigation.css";
 
 export default function Navigation() {
@@ -27,6 +28,7 @@ export default function Navigation() {
             {/* <Link className="nav-item nav-link" to="/" > Testimonials </Link>  */}
             {/* <Link className="nav-item nav-link" to="/" > Contact Us </Link>  */}
             </div>
+            
             <div className="navbar-nav ms-auto">
             <Link className="nav-item nav-link" to="/login" > Login </Link> 
             <Link className="nav-item nav-link" to="/request" > Request </Link> 
@@ -35,6 +37,7 @@ export default function Navigation() {
             </div>
           </div>
         </div>
+        
       </nav>
     );
 }

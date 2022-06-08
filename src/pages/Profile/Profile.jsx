@@ -16,7 +16,7 @@ export default function Profile() {
                 <div className="card-body text-center">
                   <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" className="rounded-circle img-fluid" style={{width: '150px'}} />
                   <h5 className="my-3">John Smith</h5>
-                  <br />
+                  <h6 className="uid">UID</h6>
                   <form className="uploadImage">
                     <label>Upload Profile Image</label>
                     <input type="file" name="myImage" accept="image/x-png,image/gif,image/jpeg" hidden/>
