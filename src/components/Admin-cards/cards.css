@@ -1,6 +1,8 @@
 .single-card {
     padding: 5px 0;
     font-size: 15px;
+    margin: 10px 0;
+    border: 1px solid black;
 }
 
 .admin-form label {

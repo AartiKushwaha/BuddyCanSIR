@@ -7,17 +7,22 @@
     margin-left:3.5rem;
 }
 
-.editButton {
-    display: flex;
-    flex-direction: row-reverse;
-}
 
-label {
-    background-color:indigo;
+.update-profile {
+    background-color: #3AB255;
     color: white;
     padding: 0.5rem;
     font-family: sans-serif;
     border-radius: 0.3rem;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+.edit-btn {
+    background-color: #3AB255;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin: 20px;
+    padding: 10px 30px;
 }

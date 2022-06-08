@@ -9,10 +9,7 @@ html {
 
 /*Background color*/
 #grad1 {
-  /* background-color:  #9C27B0; */
-  /* background-image: linear-gradient(120deg, #FF4081, #81D4FA); */
-  background-image: linear-gradient(to bottom right, #ff44007c, #7cc80385);
-  /* height: 90vh; */
+  height: 100vh;
 }
 
 /*Hide all except first fieldset*/
@@ -23,19 +20,19 @@ html {
 /*Blue Buttons*/
 .action-button {
   width: 100px;
-  background: skyblue;
+  background: #77c78a;
   font-weight: bold;
   color: white;
   border: 0 none;
   border-radius: 0px;
-  cursor: pointer;
+  cursor: not-allowed;
   padding: 10px 5px;
   margin: 20px 5px;
 }
 
 .action-button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue;
-  background: #3d98c2;
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #3AB255;
+  background: #3AB255;
 }
 
 
@@ -115,7 +112,7 @@ html {
 
 /*Color number of the step and the connector before it*/
 #progressbar li.active:before, #progressbar li.active:after {
-  background: skyblue;
+  background: #3AB255;
 }
 
 .request-form {

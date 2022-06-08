@@ -5,7 +5,12 @@ import "./navigation.css";
 
 export default function Navigation() {
     return(
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      //       <div className="navbar-nav ms-auto">
+      //       <Link className="nav-item nav-link" to="/login" > Login </Link> 
+      //       <Link className="nav-item nav-link" to="/request" > Request </Link> 
+      //       <Link className="nav-item nav-link" to="/admin" > Admin </Link> 
+      //       <Link className="nav-item nav-link" to="/profile" > Profile </Link> 
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a href="/" className="navbar-brand">
             <img
@@ -24,16 +29,64 @@ export default function Navigation() {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav">
-            <Link className="nav-item nav-link active" to="/" > Home </Link> 
-            {/* <Link className="nav-item nav-link" to="/" > Testimonials </Link>  */}
-            {/* <Link className="nav-item nav-link" to="/" > Contact Us </Link>  */}
+              <Link className="nav-item nav-link active" to="/">
+                {" "}
+                <h4>BuddyCanSIR</h4>{" "}
+              </Link>
+              {/* <Link className="nav-item nav-link" to="/" > Testimonials </Link>  */}
+              {/* <Link className="nav-item nav-link" to="/" > Contact Us </Link>  */}
             </div>
             
             <div className="navbar-nav ms-auto">
-            <Link className="nav-item nav-link" to="/login" > Login </Link> 
-            <Link className="nav-item nav-link" to="/request" > Request </Link> 
-            <Link className="nav-item nav-link" to="/admin" > Admin </Link> 
-            <Link className="nav-item nav-link" to="/profile" > Profile </Link> 
+              <Link className="nav-item nav-link dropdown" to="/">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/">
+                      Hindi
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/">
+                      Marathi
+                    </a>
+                  </li>
+                </ul>
+              </Link>
+              
+              <Link className="nav-item nav-link dropdown dropdown-pull-right" to="/">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Login
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                  <Link className="nav-item nav-link dropdown custom" to="/adminlogin">
+                      Admin Login
+                    </Link>
+                  </li>
+                  <li>
+                  <Link className="nav-item nav-link dropdown custom" to="/login">
+                      User Login
+                    </Link>
+                  </li>
+                </ul>
+                </Link>
             </div>
           </div>
         </div>
