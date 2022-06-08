@@ -112,15 +112,15 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </header> 
+      </header>
       {/* Image Showcases*/}
       <section className="showcase">
         <div className="container-fluid p-0">
-          <div className="row g-0">
-            <div className="col-lg-6 order-lg-2 text-white showcase-img">
+          <div className="row g-0 row1">
+            <div className="col-lg-6 order-lg-2 text-white showcase-img img-custom">
               <img
-                src="https://www.stjudechild.org/images/sjfl/3.jpg"
-                class="img-fluid"
+                src="https://www.stjudechild.org/images/what/1wt.jpg"
+                class="img-fluid rounded"
                 alt="img"
               ></img>
             </div>
@@ -133,17 +133,14 @@ export default function Home() {
                 vertical St. Judes for Life has been established in the memory
                 of Mrs. Rani Vicaji, to ensure that these children who have won
                 the battle against cancer are able to fulfil their potential.
-                They come from underprivileged families who had made great
-                sacrifices to ensure that the child was treated successfully for
-                cancer.
               </p>
             </div>
           </div>
           <div className="row g-0">
             <div className="col-lg-6 text-white showcase-img">
               <img
-                src="https://www.stjudechild.org/images/sjfl/2.jpg"
-                class="img-fluid"
+                src="https://www.stjudechild.org/images/what/8wt.jpg"
+                class="img-fluid rounded"
                 alt="img"
               ></img>
             </div>
@@ -163,8 +160,8 @@ export default function Home() {
           <div className="row g-0">
             <div className="col-lg-6 order-lg-2 text-white showcase-img">
               <img
-                src="https://www.stjudechild.org/images/sjfl/3.jpg"
-                class="img-fluid"
+                src="https://www.stjudechild.org/images/what/5wt.jpg"
+                class="img-fluid rounded"
                 alt="img"
               ></img>
             </div>
@@ -190,66 +187,93 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-3">
               <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img className="img-fluid rounded-circle mb-3" src={require("../../assets/img/venu.jpg")} alt="..." />
+                <img
+                  className="img-fluid rounded-circle mb-3"
+                  src={require("../../assets/img/venu.jpg")}
+                  alt="..."
+                />
                 <h5>Venu Nair</h5>
                 <h6>(MD, Marks and Spencer Reliance, India)</h6>
-                <p className="font-weight-light mb-0">"A very Inspiring hour with Ms.Banerji. What a fantastic set of activites being done here
-                  in a extremely professional manner.
-                  Truly worthy of huge appreciation and respect. Made my Day"</p>
+                <p className="font-weight-light mb-0">
+                  "A very Inspiring hour with Ms.Banerji. What a fantastic set
+                  of activites being done here in a extremely professional
+                  manner. Truly worthy of huge appreciation and respect. Made my
+                  Day"
+                </p>
               </div>
             </div>
             <div className="col-lg-3">
               <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img className="img-fluid rounded-circle mb-3" src={require("../../assets/img/andrea.jpg")} alt="..." />
+                <img
+                  className="img-fluid rounded-circle mb-3"
+                  src={require("../../assets/img/andrea.jpg")}
+                  alt="..."
+                />
                 <h5>Andrea Hamilton</h5>
                 <h6>(Philantropy & Social Impact, Generation Capital)</h6>
-                <p className="font-weight-light mb-0">"Very well maintained, hygiene and patients are kept under very good care. Hospitable
-                  Staff."</p>
+                <p className="font-weight-light mb-0">
+                  "Very well maintained, hygiene and patients are kept under
+                  very good care. Hospitable Staff."
+                </p>
               </div>
             </div>
             <div className="col-lg-3">
               <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img className="img-fluid rounded-circle mb-3" src={require("../../assets/img/rk.jpg")} alt="..." />
+                <img
+                  className="img-fluid rounded-circle mb-3"
+                  src={require("../../assets/img/rk.jpg")}
+                  alt="..."
+                />
                 <h5>RK Krishna Kumar</h5>
                 <h6>(Retd. Director, Tata Sons)</h6>
-                <p className="font-weight-light mb-0">"The world is a dark and forbidding place. A visit to this centre has lit a light in my
-                  heart. I can only thank all the people here for giving me this unique privilege of being
-                  here this morning. There is so much hope and goodness here."</p>
+                <p className="font-weight-light mb-0">
+                  "The world is a dark and forbidding place. A visit to this
+                  centre has lit a light in my heart. I can only thank all the
+                  people here for giving me this unique privilege of being here
+                  this morning. There is so much hope and goodness here."
+                </p>
               </div>
             </div>
             <div className="col-lg-3">
               <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img className="img-fluid rounded-circle mb-3" src={require("../../assets/img/angali.jpg")} alt="..." />
+                <img
+                  className="img-fluid rounded-circle mb-3"
+                  src={require("../../assets/img/angali.jpg")}
+                  alt="..."
+                />
                 <h5>Sachin & Anjali Tendulkar</h5>
                 <h6>(Philanthropist)</h6>
-                <p className="font-weight-light mb-0">"It was an enlightening visit. We were most impressed by everything!
-                  It was an enlightening visit. We were most impressed by everything! "</p>
+                <p className="font-weight-light mb-0">
+                  "It was an enlightening visit. We were most impressed by
+                  everything! It was an enlightening visit. We were most
+                  impressed by everything! "
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* Call to Action*/}
-      <section className="call-to-action text-white text-center" id="signup">
+      {/* <section className="call-to-action text-white text-center" id="signup">
         <div className="container position-relative">
           <div className="row justify-content-center">
             <div className="col-xl-6">
-              <h2 className="mb-4">Ready to get started? Sign up now!</h2>
-              {/* Signup form*/}
-              {/* * * * * * * * * * * * * * * **/}
-              {/* * * SB Forms Contact Form * **/}
-              {/* * * * * * * * * * * * * * * **/}
-              {/* This form is pre-integrated with SB Forms.*/}
-              {/* To make this form functional, sign up at*/}
-              {/* https://startbootstrap.com/solution/contact-forms*/}
-              {/* to get an API token!*/}
-              <form
+              <h2 className="mb-4">Ready to get started? Sign up now!</h2> */}
+      {/* Signup form*/}
+      {/* * * * * * * * * * * * * * * **/}
+      {/* * * SB Forms Contact Form * **/}
+      {/* * * * * * * * * * * * * * * **/}
+      {/* This form is pre-integrated with SB Forms.*/}
+      {/* To make this form functional, sign up at*/}
+      {/* https://startbootstrap.com/solution/contact-forms*/}
+      {/* to get an API token!*/}
+      {/* <form
                 className="form-subscribe"
                 id="contactFormFooter"
                 data-sb-form-api-token="API_TOKEN"
-              >
-                {/* Email address input*/}
-                <div className="row">
+              > */}
+      {/* Email address input*/}
+      {/* <div className="row">
                   <div className="col">
                     <input
                       className="form-control form-control-lg"
@@ -280,12 +304,12 @@ export default function Home() {
                       Submit
                     </button>
                   </div>
-                </div>
-                {/* Submit success message*/}
-                {/**/}
-                {/* This is what your users will see when the form*/}
-                {/* has successfully submitted*/}
-                <div className="d-none" id="submitSuccessMessage">
+                </div> */}
+      {/* Submit success message*/}
+      {/**/}
+      {/* This is what your users will see when the form*/}
+      {/* has successfully submitted*/}
+      {/* <div className="d-none" id="submitSuccessMessage">
                   <div className="text-center mb-3">
                     <div className="fw-bolder">Form submission successful!</div>
                     <p>To activate this form, sign up at</p>
@@ -296,12 +320,12 @@ export default function Home() {
                       https://startbootstrap.com/solution/contact-forms
                     </a>
                   </div>
-                </div>
-                {/* Submit error message*/}
-                {/**/}
-                {/* This is what your users will see when there is*/}
-                {/* an error submitting the form*/}
-                <div className="d-none" id="submitErrorMessage">
+                </div> */}
+      {/* Submit error message*/}
+      {/**/}
+      {/* This is what your users will see when there is*/}
+      {/* an error submitting the form*/}
+      {/* <div className="d-none" id="submitErrorMessage">
                   <div className="text-center text-danger mb-3">
                     Error sending message!
                   </div>
@@ -310,9 +334,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Footer*/}
-      <footer className="footer bg-light">
+      {/* <footer className="footer bg-light">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 h-100 text-center text-lg-start my-auto">
@@ -358,7 +382,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
       {/* Bootstrap core JS*/}
       {/* Core theme JS*/}
       {/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * **/}
