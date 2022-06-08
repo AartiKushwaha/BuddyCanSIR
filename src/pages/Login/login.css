@@ -65,21 +65,11 @@
     text-align: center;
 }
 
-input[type=email], input[type=password], input[type=submit] {
+input[type=email], input[type=password]{
     width: 100%;
     border: 1px solid grey;
     padding: 10px;
     font-size: 15px;
-}
-
-input[type=submit] {
-    width: 100%;
-    background-color: #3AB255;
-    color: white;
-    font-size: 15px;
-    border: none;
-    margin: 10px 0;
-    padding: 10px;
 }
 
 .disclaimer {
