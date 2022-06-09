@@ -1,28 +1,18 @@
-import { Helmet } from "react-helmet"
+import React, { useEffect } from "react";
 
-export default function Translator() {
-    const google = window.google
+const Translator = () => {
+  useEffect(() => {
+    // in some cases, the google translate script adds a style to the opening html tag.
+    // this added style disables scrolling.
+    // the next 3 lines removes this added style in order to re-enable scrolling.
+    if (window.document.scrollingElement.hasAttribute("style")) {
+      window.document.scrollingElement.setAttribute("style", "");
+    }
+  });
+
   return (
-    <>
-      <Helmet>
-      <div id="google_translate_element"></div> 
-      
-      <script type="text/javascript"> 
-          function googleTranslateElementInit(){ 
-              new google.translate.TranslateElement(
-                  {pageLanguage: 'en'}, 
-                  'google_translate_element'
-              )
-}
-      </script> 
-        <script
-          src="https://translate.google.com/translate_a/element.js?
-          cb=googleTranslateElementInit"
-          async
-        ></script>
-      </Helmet>
-      <div className="App"></div>
-    </>
-  )
-}
+    <div id="google_translate_element"></div>
+  );
+};
 
+export default Translator;
