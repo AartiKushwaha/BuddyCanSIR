@@ -31,9 +31,9 @@ export default function Footer() {
 
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget no-box">
-                  <h5 className="widget-title">Get Started<span /></h5>
-                  <p>Get access to your full Training and Marketing Suite.</p>
-                  <a className="btn" href="https://bit.ly/3m9avif" target="_blank">Subscribe Now</a>
+                  <h5 className="widget-title">Share your experience<span /></h5>
+                  <textarea rows="3" cols="20" placeholder="Describe your experience here..."></textarea>
+                  <a className="btn" href="https://bit.ly/3m9avif" target="_blank">Submit</a>
                 </div>
               </div>
               <div className="col-xs-12 col-sm-6 col-md-3">

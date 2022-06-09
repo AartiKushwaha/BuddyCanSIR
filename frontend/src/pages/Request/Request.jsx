@@ -24,7 +24,7 @@ export default function Request() {
       //hide the current fieldset with style
       current_fs.animate({ opacity: 0 }, {
         step: function (now) {
-          // for making fielset appear animation
+          // for making fieldset appear animation
           opacity = 1 - now;
 
           current_fs.css({
