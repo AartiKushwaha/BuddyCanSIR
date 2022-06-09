@@ -44,7 +44,7 @@ export default function Home() {
             <div className="col-lg-6 order-lg-2 text-white showcase-img img-custom">
               <img
                 src="https://www.stjudechild.org/images/what/1wt.jpg"
-                className="img-fluid rounded-circle"
+                className="img-fluid rounded-circle  border-circle"
                 alt="img"
               ></img>
             </div>
@@ -64,7 +64,7 @@ export default function Home() {
             <div className="col-lg-6 text-white showcase-img">
               <img
                 src="https://www.stjudechild.org/images/what/8wt.jpg"
-                className="img-fluid rounded-circle"
+                className="img-fluid rounded-circle border-circle"
                 alt="img"
               ></img>
             </div>
@@ -85,7 +85,7 @@ export default function Home() {
             <div className="col-lg-6 order-lg-2 text-white showcase-img ">
               <img
                 src="https://www.stjudechild.org/images/what/5wt.jpg"
-                className="img-fluid rounded-circle"
+                className="img-fluid rounded-circle border-circle"
                 alt="img"
               ></img>
             </div>
