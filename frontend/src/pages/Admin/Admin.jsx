@@ -16,7 +16,7 @@ export default function Admin() {
   return (
     <>
       <Navigation />
-        <div className="container-fluid admin-container ">
+        <div className="container-fluid admin-container bck1">
           <div className="col-md-3">
             <div className="leftside">
               <div className="container-fluid mt-3">

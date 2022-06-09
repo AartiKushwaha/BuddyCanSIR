@@ -188,3 +188,11 @@ input[type=file] {
     padding: 0;
   }
 }
+
+.bck {
+  background: url("../../assets/img/background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
