@@ -1,4 +1,5 @@
 import React from "react";
+import "./AdminLogin.css";
 import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
 import Translator from "../../components/Translator/Translator";
@@ -7,7 +8,6 @@ export default function AdminLogin() {
   return (
     <>
       <Navigation />
-      
       <div className="login">
         <div className="login-container">
           <p className="login-heading">Admin Login</p>
