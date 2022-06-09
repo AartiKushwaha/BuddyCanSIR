@@ -16,8 +16,7 @@ export default function Admin() {
   return (
     <>
       <Navigation />
-      <section className="image">
-        <div className="container-fluid admin-container">
+        <div className="container-fluid admin-container ">
           <div className="col-md-3">
             <div className="leftside">
               <div className="container-fluid mt-3">
@@ -96,7 +95,6 @@ export default function Admin() {
             </div>
           </div>
         </div>
-      </section>
       <Footer />
     </>
   );
