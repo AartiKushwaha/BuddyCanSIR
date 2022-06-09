@@ -38,30 +38,7 @@ export default function Navigation() {
             </div>
             
             <div className="navbar-nav ms-auto">
-              <Link className="nav-item nav-link dropdown" to="/">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="/"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  English
-                </a>
-                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="/">
-                      Hindi
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/">
-                      Marathi
-                    </a>
-                  </li>
-                </ul>
-              </Link>
+              <Translator/>
               
               <Link className="nav-item nav-link dropdown dropdown-pull-right" to="/">
                 <a

@@ -4,6 +4,7 @@ import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
 import data from "./mock-data.json";
 import Cards from "../../components/Admin-cards/Cards";
+import Translator from "../../components/Translator/Translator";
 
 export default function Admin() {
   const [isOpen, setIsopen] = useState(false);
@@ -15,6 +16,7 @@ export default function Admin() {
   return (
     <>
       <Navigation />
+    
       <div class="container-fluid admin-container">
         <div class="col-md-3">
           <div class="leftside">

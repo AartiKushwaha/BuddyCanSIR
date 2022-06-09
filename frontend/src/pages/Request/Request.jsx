@@ -3,6 +3,7 @@ import "./request.css";
 import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
 import $ from "jquery";
+import Translator from "../../components/Translator/Translator";
 
 export default function Request() {
   $(document).ready(function () {

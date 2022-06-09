@@ -4,11 +4,13 @@ import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Footer/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import Translator from "../../components/Translator/Translator";
 
 export default function Profile() {
     return(
         <>
         <Navigation />
+       
         <section style={{backgroundColor: '#eee'}}>
         <div className="container py-5 mt-5">
           <h1 className="heading text-center">Update Profile</h1>
