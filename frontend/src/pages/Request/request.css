@@ -159,7 +159,8 @@ textarea {
 }
 
 .request-main-div {
-  border: 1px solid black;
+  border: 2px solid black;
+  box-shadow: 20px 20px 20px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 input[type=file] {
