@@ -7,9 +7,9 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
-    return(
-        <>
-            <footer id="footer" className="footer-1">
+  return (
+    <>
+      <footer id="footer" className="footer-1">
         <div className="main-footer widgets-dark typo-light ">
           <div className="container mt-4">
             <div className="row  justify-content-center ">
@@ -28,7 +28,7 @@ export default function Footer() {
                   </p>
                 </div>
               </div>
-              
+
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget no-box">
                   <h5 className="widget-title">Get Started<span /></h5>
@@ -40,10 +40,10 @@ export default function Footer() {
                 <div className="widget no-box">
                   <h5 className="widget-title">Contact Us<span /></h5>
                   <ul className="social-footer2">
-                    <li className><a title="youtube" href="https://youtube.com/user/StJudechildcare"><FontAwesomeIcon icon={faYoutube}/></a></li>
-                    <li className><a title="Mail" href="https://contact@stjudechild.org"><FontAwesomeIcon icon={faEnvelopeOpen}/></a></li>
-                    <li className><a title="Twitter" href="https://twitter.com/StJudeChildCare"><FontAwesomeIcon icon={faTwitter}/></a></li>
-                    <li className><a title="linkedin"  href="https://www.linkedin.com/company/st--jude-india"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                    <li className><a title="youtube" href="https://youtube.com/user/StJudechildcare"><FontAwesomeIcon icon={faYoutube} /></a></li>
+                    <li className><a title="Mail" href="https://contact@stjudechild.org"><FontAwesomeIcon icon={faEnvelopeOpen} /></a></li>
+                    <li className><a title="Twitter" href="https://twitter.com/StJudeChildCare"><FontAwesomeIcon icon={faTwitter} /></a></li>
+                    <li className><a title="linkedin" href="https://www.linkedin.com/company/st--jude-india"><FontAwesomeIcon icon={faLinkedin} /></a></li>
                   </ul>
                 </div>
               </div>
@@ -60,6 +60,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-        </>
-    );
+    </>
+  );
 }
