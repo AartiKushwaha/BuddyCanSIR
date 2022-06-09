@@ -117,7 +117,7 @@ export default function Home() {
           <h2 className="mb-5">What people are saying...</h2>
           <div className="row">
             <div className="col-lg-3">
-              <Card body className="color-testimonial">
+              <Card body className="size">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
                     className="img-fluid rounded-circle mb-3"
@@ -136,52 +136,58 @@ export default function Home() {
               </Card>
             </div>
             <div className="col-lg-3">
-              <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img
-                  className="img-fluid rounded-circle mb-3"
-                  src={require("../../assets/img/andrea.jpg")}
-                  alt="..."
-                />
-                <h5>Andrea Hamilton</h5>
-                <h6>(Philantropy & Social Impact, Generation Capital)</h6>
-                <p className="font-weight-light mb-0">
-                  "Very well maintained, hygiene and patients are kept under
-                  very good care. Hospitable Staff."
-                </p>
-              </div>
+              <Card body className="size">
+                <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+                  <img
+                    className="img-fluid rounded-circle mb-3"
+                    src={require("../../assets/img/andrea.jpg")}
+                    alt="..."
+                  />
+                  <h5>Andrea Hamilton</h5>
+                  <h6>(Philantropy & Social Impact, Generation Capital)</h6>
+                  <p className="font-weight-light mb-0">
+                    "Very well maintained, hygiene and patients are kept under
+                    very good care. Hospitable Staff."
+                  </p>
+                </div>
+              </Card>
             </div>
             <div className="col-lg-3">
-              <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img
-                  className="img-fluid rounded-circle mb-3"
-                  src={require("../../assets/img/rk.jpg")}
-                  alt="..."
-                />
-                <h5>RK Krishna Kumar</h5>
-                <h6>(Retd. Director, Tata Sons)</h6>
-                <p className="font-weight-light mb-0">
-                  "The world is a dark and forbidding place. A visit to this
-                  centre has lit a light in my heart. I can only thank all the
-                  people here for giving me this unique privilege of being here
-                  this morning. There is so much hope and goodness here."
-                </p>
-              </div>
+              <Card body className="size">
+                <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+                  <img
+                    className="img-fluid rounded-circle mb-3"
+                    src={require("../../assets/img/rk.jpg")}
+                    alt="..."
+                  />
+                  <h5>RK Krishna Kumar</h5>
+                  <h6>(Retd. Director, Tata Sons)</h6>
+                  <p className="font-weight-light mb-0">
+                    "The world is a dark and forbidding place. A visit to this
+                    centre has lit a light in my heart. I can only thank all the
+                    people here for giving me this unique privilege of being here
+                    this morning. There is so much hope and goodness here."
+                  </p>
+                </div>
+              </Card>
             </div>
             <div className="col-lg-3">
-              <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img
-                  className="img-fluid rounded-circle mb-3"
-                  src={require("../../assets/img/angali.jpg")}
-                  alt="..."
-                />
-                <h5>Sachin & Anjali Tendulkar</h5>
-                <h6>(Philanthropist)</h6>
-                <p className="font-weight-light mb-0">
-                  "It was an enlightening visit. We were most impressed by
-                  everything! It was an enlightening visit. We were most
-                  impressed by everything! "
-                </p>
-              </div>
+              <Card body className="size">
+                <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+                  <img
+                    className="img-fluid rounded-circle mb-3"
+                    src={require("../../assets/img/angali.jpg")}
+                    alt="..."
+                  />
+                  <h5>Sachin & Anjali Tendulkar</h5>
+                  <h6>(Philanthropist)</h6>
+                  <p className="font-weight-light mb-0">
+                    "It was an enlightening visit. We were most impressed by
+                    everything! It was an enlightening visit. We were most
+                    impressed by everything! "
+                  </p>
+                </div>
+              </Card>
             </div>
           </div>
         </div>
