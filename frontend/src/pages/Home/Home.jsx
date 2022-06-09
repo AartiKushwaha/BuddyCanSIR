@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.css";
+import Card from "react-bootstrap/Card";
 import Navigation from "../../components/Navigation/Navigation";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
@@ -49,15 +50,17 @@ export default function Home() {
               ></img>
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-              <h2>The Initiative</h2>
-              <p className="lead mb-0">
-                We believe every child has the right to fulfil her aspirations
-                and our credo has always been ‘Once a St. Judes child is always
-                a St. Judes child’. In keeping with this vision, our new
-                vertical St. Judes for Life has been established in the memory
-                of Mrs. Rani Vicaji, to ensure that these children who have won
-                the battle against cancer are able to fulfil their potential.
-              </p>
+              <Card body className="borderCard">
+                <h2>The Initiative</h2>
+                <p className="lead mb-0">
+                  We believe every child has the right to fulfil her aspirations
+                  and our credo has always been ‘Once a St. Judes child is always
+                  a St. Judes child’. In keeping with this vision, our new
+                  vertical St. Judes for Life has been established in the memory
+                  of Mrs. Rani Vicaji, to ensure that these children who have won
+                  the battle against cancer are able to fulfil their potential.
+                </p>
+              </Card>
             </div>
           </div>
           <div className="row g-0 py-4">
@@ -69,16 +72,18 @@ export default function Home() {
               ></img>
             </div>
             <div className="col-lg-6 my-auto showcase-text">
-              <h2>Vision</h2>
-              <p className="lead mb-0">
-                We believe that the children, who have been nurtured at our
-                Centres to recover from cancer, are exceptionally brave and
-                special and have a lifelong bond with St. Judes. As their Go To
-                organisation in times of need, St. Judes for Life will always be
-                available to provide support and guidance throughout their
-                lives, to help them reach their potential and fulfil their
-                aspirations.
-              </p>
+              <Card body className="borderCard">
+                <h2>Vision</h2>
+                <p className="lead mb-0">
+                  We believe that the children, who have been nurtured at our
+                  Centres to recover from cancer, are exceptionally brave and
+                  special and have a lifelong bond with St. Judes. As their Go To
+                  organisation in times of need, St. Judes for Life will always be
+                  available to provide support and guidance throughout their
+                  lives, to help them reach their potential and fulfil their
+                  aspirations.
+                </p>
+              </Card>
             </div>
           </div>
           <div className="row g-0 py-4 ">
@@ -90,16 +95,18 @@ export default function Home() {
               ></img>
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-              <h2>Mission</h2>
-              <p className="lead mb-0">
-                We believe that the children, who have been nurtured at our
-                Centres to recover from cancer, are exceptionally brave and
-                special and have a lifelong bond with St. Judes. As their Go To
-                organisation in times of need, St. Judes for Life will always be
-                available to provide support and guidance throughout their
-                lives, to help them reach their potential and fulfil their
-                aspirations.
-              </p>
+              <Card body className="borderCard">
+                <h2>Mission</h2>
+                <p className="lead mb-0">
+                  We believe that the children, who have been nurtured at our
+                  Centres to recover from cancer, are exceptionally brave and
+                  special and have a lifelong bond with St. Judes. As their Go To
+                  organisation in times of need, St. Judes for Life will always be
+                  available to provide support and guidance throughout their
+                  lives, to help them reach their potential and fulfil their
+                  aspirations.
+                </p>
+              </Card>
             </div>
           </div>
         </div>
@@ -110,21 +117,23 @@ export default function Home() {
           <h2 className="mb-5">What people are saying...</h2>
           <div className="row">
             <div className="col-lg-3">
-              <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                <img
-                  className="img-fluid rounded-circle mb-3"
-                  src={require("../../assets/img/venu.jpg")}
-                  alt="..."
-                />
-                <h5>Venu Nair</h5>
-                <h6>(MD, Marks and Spencer Reliance, India)</h6>
-                <p className="font-weight-light mb-0">
-                  "A very Inspiring hour with Ms.Banerji. What a fantastic set
-                  of activites being done here in a extremely professional
-                  manner. Truly worthy of huge appreciation and respect. Made my
-                  Day"
-                </p>
-              </div>
+              <Card body className="color-testimonial">
+                <div className="testimonial-item mx-auto mb-5 mb-lg-0">
+                  <img
+                    className="img-fluid rounded-circle mb-3"
+                    src={require("../../assets/img/venu.jpg")}
+                    alt="..."
+                  />
+                  <h5>Venu Nair</h5>
+                  <h6>(MD, Marks and Spencer Reliance, India)</h6>
+                  <p className="font-weight-light mb-0">
+                    "A very Inspiring hour with Ms.Banerji. What a fantastic set
+                    of activites being done here in a extremely professional
+                    manner. Truly worthy of huge appreciation and respect. Made my
+                    Day"
+                  </p>
+                </div>
+              </Card>
             </div>
             <div className="col-lg-3">
               <div className="testimonial-item mx-auto mb-5 mb-lg-0">

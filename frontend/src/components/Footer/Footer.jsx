@@ -12,7 +12,7 @@ export default function Footer() {
       <footer id="footer" className="footer-1">
         <div className="main-footer widgets-dark typo-light ">
           <div className="container mt-4">
-            <div className="row  justify-content-center ">
+            <div className="row  justify-content-center">
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget subscribe no-box">
                   <h5 className="widget-title">St. Judes For Life<span /></h5>
