@@ -51,7 +51,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
               <Card body className="borderCard">
-                <h2>The Initiative</h2>
+                <h2 className="font-head-home">The Initiative</h2>
                 <p className="lead mb-0 text-style">
                   We believe every child has the right to fulfil her aspirations
                   and our credo has always been ‘Once a St. Judes child is always
@@ -73,7 +73,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6 my-auto showcase-text">
               <Card body className="borderCard text-style">
-                <h2>Vision</h2>
+                <h2 className="font-head-home">Vision</h2>
                 <p className="lead mb-0">
                   We believe that the children, who have been nurtured at our
                   Centres to recover from cancer, are exceptionally brave and
@@ -96,7 +96,7 @@ export default function Home() {
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
               <Card body className="borderCard">
-                <h2>Mission</h2>
+                <h2 className="font-head-home">Mission</h2>
                 <p className="lead mb-0 text-style">
                   We believe that the children, who have been nurtured at our
                   Centres to recover from cancer, are exceptionally brave and
@@ -114,7 +114,7 @@ export default function Home() {
       {/* Testimonials*/}
       <section className="testimonials text-center bg-light">
         <div className="container">
-          <h2 className="mb-5">What people are saying...</h2>
+          <h2 className="mb-5 text-testimonial">What people are saying...</h2>
           <div className="row">
             <div className="col-lg-3">
               <Card body className="size">
@@ -125,8 +125,8 @@ export default function Home() {
                     alt="..."
                   />
                   <h5>Venu Nair</h5>
-                  <h6>(MD, Marks and Spencer Reliance, India)</h6>
-                  <p className="font-weight-light mb-0">
+                  <h6 className="font-testimonial">(MD, Marks and Spencer Reliance, India)</h6>
+                  <p className="font-weight-light mb-0 font-text-testimonial">
                     "A very Inspiring hour with Ms.Banerji. What a fantastic set
                     of activites being done here in a extremely professional
                     manner. Truly worthy of huge appreciation and respect. Made my
@@ -144,8 +144,8 @@ export default function Home() {
                     alt="..."
                   />
                   <h5>Andrea Hamilton</h5>
-                  <h6>(Philantropy & Social Impact, Generation Capital)</h6>
-                  <p className="font-weight-light mb-0">
+                  <h6 className="font-testimonial">(Philantropy & Social Impact, Generation Capital)</h6>
+                  <p className="font-weight-light mb-0 font-text-testimonial">
                     "Very well maintained, hygiene and patients are kept under
                     very good care. Hospitable Staff."
                   </p>
@@ -161,8 +161,8 @@ export default function Home() {
                     alt="..."
                   />
                   <h5>RK Krishna Kumar</h5>
-                  <h6>(Retd. Director, Tata Sons)</h6>
-                  <p className="font-weight-light mb-0">
+                  <h6 className="font-testimonial">(Retd. Director, Tata Sons)</h6>
+                  <p className="font-weight-light mb-0 font-text-testimonial">
                     "The world is a dark and forbidding place. A visit to this
                     centre has lit a light in my heart. I can only thank all the
                     people here for giving me this unique privilege of being here
@@ -180,8 +180,8 @@ export default function Home() {
                     alt="..."
                   />
                   <h5>Sachin & Anjali Tendulkar</h5>
-                  <h6>(Philanthropist)</h6>
-                  <p className="font-weight-light mb-0">
+                  <h6 className="font-testimonial">(Philanthropist)</h6>
+                  <p className="font-weight-light mb-0 font-text-testimonial">
                     "It was an enlightening visit. We were most impressed by
                     everything! It was an enlightening visit. We were most
                     impressed by everything! "

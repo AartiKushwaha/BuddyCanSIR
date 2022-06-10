@@ -11,6 +11,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 
 .navbar{
   z-index: 1;
@@ -611,6 +613,21 @@ progress {
   height: auto;
 }
 
+.font-testimonial {
+  font-weight: inherit;
+}
+
+.text-testimonial {
+  text-transform: uppercase;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-weight: bold;
+}
+
+.font-text-testimonial {
+  font-family: 'Coming Soon', cursive;
+  font-weight: inherit;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -673,6 +690,11 @@ progress {
     max-width: 1320px;
   }
 }
+
+.font-head-home {
+  font-family: 'Merriweather', serif;
+}
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -689,6 +711,11 @@ progress {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-top: var(--bs-gutter-y);
+}
+
+.text-style {
+  font-family: 'Mulish', sans-serif;
+  font-weight: lighter;
 }
 
 .col {
