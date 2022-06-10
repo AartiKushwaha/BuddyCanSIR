@@ -1,38 +1,43 @@
-import React, { useState, useMemo } from "react";
+import React, {useState, useMemo} from "react";
 import "./cards.css";
 import Pagination from "../Pagination/Pagination";
+import { Link } from "react-router-dom";
 
-let PageSize = 10;
+let PageSize = 5;
 
-export default function Cards({ prop }) {
+export default function Cards({ data }) {
+
   const [currentPage, setCurrentPage] = useState(1);
 
   const currentTableData = useMemo(() => {
     const firstPageIndex = (currentPage - 1) * PageSize;
     const lastPageIndex = firstPageIndex + PageSize;
-    return prop.slice(firstPageIndex, lastPageIndex);
+    return data.slice(firstPageIndex, lastPageIndex);
   }, [currentPage]);
+  console.log(currentTableData);
 
   return (
     <>
       <div className="users-cards">
-        {currentTableData.map((item) => {
+        {data.map((item) => {
           return (
             <div className="single-card" style={{ backgroundColor: "white" }}>
               <div class="container">
                 <div class="row first-row">
-                  <div class="col-md-1 col-sm-6">{item.id})</div>
+                  <div class="col-md-1 col-sm-6">id)</div>
                   <div class="col-md-2 col-sm-6">
-                    {<a href="/">{item.name}</a>}
+                  <Link to={`/profile/${item.uid}`}>
+                    {<a href="/profile">{item.username}</a>}
+                  </Link>
                   </div>
-                  <div class="col-md-2 col-sm-6">{item.email}</div>
-                  <div class="col-md-2 col-sm-6">{item.phone}</div>
+                  <div class="col-md-2 col-sm-6">email</div>
+                  <div class="col-md-2 col-sm-6">phone</div>
                   <div class="col-md-2 col-sm-6">
-                    <span style={{ color: "red" }}>{item.category}</span>
+                    <span style={{ color: "red" }}>{item.track}</span>
                   </div>
                   <div class="col-md-3 col-sm-6" style={{ fontSize: "13px" }}>
                     <span style={{ color: "gray" }}>
-                      {item.start_date} - {item.end_date}
+                      {new Date(item.createdAt).toDateString} - end_date
                     </span>{" "}
                     [<span style={{ color: "red" }}>{item.status}</span>]
                   </div>
@@ -40,7 +45,12 @@ export default function Cards({ prop }) {
                 <div class="row second-row">
                   <div class="col-md-9 col-sm-12">
                     <ul className="doc-list">
-                      {item.documents.map((doc) => {
+                    <li>
+                            <a className="doc-link" href="#">
+                              doc_name
+                            </a>
+                          </li>
+                      {/* {item.documents.map((doc) => {
                         return (
                           <li>
                             <a className="doc-link" href={doc.link}>
@@ -48,7 +58,7 @@ export default function Cards({ prop }) {
                             </a>
                           </li>
                         );
-                      })}
+                      })} */}
                     </ul>
                   </div>
                   <div class="col-md-3 col-sm-12">
@@ -85,13 +95,13 @@ export default function Cards({ prop }) {
             </div>
           );
         })}
-        <Pagination
+        {/* <Pagination
           className="pagination-bar"
           currentPage={currentPage}
-          totalCount={prop.length}
+          totalCount={data.length}
           pageSize={PageSize}
           onPageChange={(page) => setCurrentPage(page)}
-        />
+        /> */}
       </div>
     </>
   );

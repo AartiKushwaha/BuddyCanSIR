@@ -109,6 +109,7 @@ label {
 .sidebar-overlay.active{
     opacity: 1;
     visibility: visible;
+    left: 280px;
 }
 
 .sd-body{

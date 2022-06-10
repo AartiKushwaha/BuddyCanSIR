@@ -35,6 +35,144 @@
     color: white;
     font-size: 15px;
     border: none;
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px 30px;
+}
+
+.profile-pic {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.settings{
+    display: flex;
+}
+
+.settingsWrapper{
+    flex: 9;
+    padding: 20px;
+}
+
+.settingsTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-left: 80px;
+}
+
+.settingsUpdateTitle{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(247, 83, 83);
+}
+
+.settingsDeleteTitle {
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.settingsForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.settingsPP{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    align-self: center;
+}
+
+.settingsPPImg{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.settingsPPIcon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 400px;
+    left: 280px;
+}
+
+.settingsForm > label {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.settingsForm > input {
+    color: gray;
+    margin: 10px 0;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+.settingsSubmit{
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.settingContainer{
+    padding: 40px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+}
+
+.sc2{
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.settingInput{
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 30px;
+    width: 95%;
+}
+
+.settingInput:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(146, 146, 146);
+}
+
+.sc1{
+    text-align: center;
+}
+
+.update-btn {
+    width: 200px;
+    padding: 10px;
+    background-color: #3AB255;
+    color: white;
+    margin: 10px auto;
+    border: none;
 }
