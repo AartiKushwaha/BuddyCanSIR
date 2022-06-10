@@ -21,8 +21,8 @@ export default function Home() {
             <div className="col-xl-6">
               <div className="text-center text-white">
                 {/* Page heading*/}
-                <h1 className="mb-5">BuddyCanSIR</h1>
-                <h4 className="tagline">
+                <h1 className="mb-5 ">BuddyCanSIR</h1>
+                <h4 className="tagline ">
                   To make you Self-reliant and Independent is our Responsibility
                 </h4>
                 {/* Signup form*/}

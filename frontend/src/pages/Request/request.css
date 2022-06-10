@@ -125,10 +125,6 @@ html {
 }
 
 .font-head {
-  font-family: 'Caveat', cursive;
-  font-family: 'Crimson Text', serif;
-  font-family: 'Noto Serif', serif;
-  font-family: 'Roboto', sans-serif;
   font-family: 'Tiro Bangla', serif;
 }
 
@@ -138,15 +134,11 @@ html {
 }
 
 .font-text-head {
-  font-family: 'Caveat', cursive;
-  font-family: 'Crimson Text', serif;
-  font-family: 'Roboto', sans-serif;
   font-family: 'Tiro Bangla', serif;
 }
 
 .font-text {
-  font-family: 'Crimson Text', serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Tiro Bangla', serif;
 }
 
 textarea {

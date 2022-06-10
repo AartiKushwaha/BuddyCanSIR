@@ -196,18 +196,18 @@ export default function Request() {
                     </fieldset>
                     <fieldset>
                       <div className="form-card">
-                        <h3 className="modal-title w-100 request-heading">Request Status</h3>
+                        <h3 className="modal-title w-100 request-heading font-head">Request Status</h3>
                         <p className="text-center">Your request has been approved.</p>
                       </div>
                       <div className="form-card">
-                        <h3 className="modal-title w-100 request-heading" style={{ marginTop: "40px" }}>Upload Your Documents</h3>
+                        <h3 className="modal-title w-100 request-heading font-text" style={{ marginTop: "40px" }}>Upload Your Documents</h3>
                         <div className="file-upload">
                           <form action="/action_page.php">
                             <div className="row">
-                              <div className="col-md-4 col-sm-12">
+                              <div className="col-md-4 col-sm-12 font-text">
                                 <label htmlFor=""><b>Marksheet: </b></label>
                               </div>
-                              <div className="col-md-8 col-sm-12">
+                              <div className="col-md-8 col-sm-12 font-text">
                                 <input type="file" id="File1" name="file1" onChange={(e) => setMarksheet(e.target.value)} />
                               </div>
                             </div>
@@ -216,7 +216,7 @@ export default function Request() {
                         <div className="file-upload">
                           <form action="/action_page.php">
                             <div className="row">
-                              <div className="col-md-4 col-sm-12">
+                              <div className="col-md-4 col-sm-12 font-text">
                                 <label htmlFor=""><b>Attendance record: </b></label>
                               </div>
                               <div className="col-md-8 col-sm-12">
@@ -227,7 +227,7 @@ export default function Request() {
                         <div className="file-upload">
                           <form action="/action_page.php">
                             <div className="row">
-                              <div className="col-md-4 col-sm-12">
+                              <div className="col-md-4 col-sm-12 font-text">
                                 <label htmlFor=""><b>Medical record: </b></label>
                               </div>
                               <div className="col-md-8 col-sm-12">
@@ -241,7 +241,7 @@ export default function Request() {
                     </fieldset>
                     <fieldset>
                       <div className="form-card">
-                        <h3 className="modal-title w-100 request-heading">Application Status</h3>
+                        <h3 className="modal-title w-100 request-heading font-head">Application Status</h3>
                         <p className="text-center">Congratulation! Your request has been approved. We will reach out to you shortly via email/sms.</p>
                       </div>
                       <br /><br />
