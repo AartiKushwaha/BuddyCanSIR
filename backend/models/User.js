@@ -1,10 +1,7 @@
+const mongoose = require("mongoose")
+
 const UserSchema = new mongoose.Schema({
-    uid:{
-        type: Number,
-        required: true,
-        unique: true,
-    },
-    name:{
+    username:{
         type: String,
         required: true,
         unique: true
@@ -22,18 +19,22 @@ const UserSchema = new mongoose.Schema({
         type: String,
         default: "",   
     },
-    phone:{
+    phone_no:{
         type: Number,
         unique: true,
+        required: true
     },
-    status:{
+    education: {
         type: String,
-        default: "",
     },
-    document:{
+    address: {
+        type: String,
+    },
+    hospital_details: {
         type: Array,
-        required: false
     }
     },
     { timestamps : true }
 );
+
+module.exports = mongoose.model("User", UserSchema);
