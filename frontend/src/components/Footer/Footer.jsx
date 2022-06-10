@@ -1,12 +1,32 @@
 import React from "react";
 import "./footer.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpen } from "@fortawesome/free-solid-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-
+import { useState, useRef } from "react";
+//https://script.google.com/macros/s/AKfycbykisHuxtPOYrJD96Pi6VCGg_EJ30U7DyZ84Fiurlri7L27NiO3wGMVERp3br7PV-GOVw/exec
 export default function Footer() {
+  const formRef = useRef(null);
+  const scriptUrl =
+    "https://script.google.com/macros/s/AKfycbykisHuxtPOYrJD96Pi6VCGg_EJ30U7DyZ84Fiurlri7L27NiO3wGMVERp3br7PV-GOVw/exec";
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    fetch(scriptUrl, {
+      method: "POST",
+      body: new FormData(formRef.current),
+    })
+      .then((res) => {
+        console.log("SUCCESSFULLY SUBMITTED");
+        setLoading(false);
+      })
+      .catch((err) => console.log(err));
+  };
   return (
     <>
       <footer id="footer" className="footer-1">
@@ -15,7 +35,10 @@ export default function Footer() {
             <div className="row  justify-content-center">
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget subscribe no-box">
-                  <h5 className="widget-title">St. Judes For Life<span /></h5>
+                  <h5 className="widget-title">
+                    St. Judes For Life
+                    <span />
+                  </h5>
                   <p>
                     <ul>
                       <li>Safe and Hygienic Housing</li>
@@ -31,19 +54,71 @@ export default function Footer() {
 
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget no-box">
-                  <h5 className="widget-title">Share your experience<span /></h5>
-                  <textarea rows="2" cols="20" placeholder="Describe your experience here..."></textarea>
-                  <a className="btn" href="">Submit</a>
+                  <h5 className="widget-title">
+                    Share your experience
+                    <span />
+                  </h5>
+                  <form
+                    ref={formRef}
+                    onSubmit={handleSubmit}
+                    name="google-sheet"
+                  >
+                    <textarea
+                      rows="2"
+                      cols="20"
+                      placeholder="Describe your experience here..."
+                      name="Experience"
+                    ></textarea>
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Phone no"
+                      name="Phone_no"
+                    />
+                    <input
+                      className="login-button"
+                      type="submit"
+                      value={loading ? "Loading..." : "SEND MESSAGE"}
+                    />
+                  </form>
                 </div>
               </div>
               <div className="col-xs-12 col-sm-6 col-md-3">
                 <div className="widget no-box">
-                  <h5 className="widget-title">Contact Us<span /></h5>
+                  <h5 className="widget-title">
+                    Contact Us
+                    <span />
+                  </h5>
                   <ul className="social-footer2">
-                    <li className><a title="youtube" href="https://youtube.com/user/StJudechildcare"><FontAwesomeIcon icon={faYoutube} /></a></li>
-                    <li className><a title="Mail" href="https://contact@stjudechild.org"><FontAwesomeIcon icon={faEnvelopeOpen} /></a></li>
-                    <li className><a title="Twitter" href="https://twitter.com/StJudeChildCare"><FontAwesomeIcon icon={faTwitter} /></a></li>
-                    <li className><a title="linkedin" href="https://www.linkedin.com/company/st--jude-india"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+                    <li className>
+                      <a
+                        title="youtube"
+                        href="https://youtube.com/user/StJudechildcare"
+                      >
+                        <FontAwesomeIcon icon={faYoutube} />
+                      </a>
+                    </li>
+                    <li className>
+                      <a title="Mail" href="https://contact@stjudechild.org">
+                        <FontAwesomeIcon icon={faEnvelopeOpen} />
+                      </a>
+                    </li>
+                    <li className>
+                      <a
+                        title="Twitter"
+                        href="https://twitter.com/StJudeChildCare"
+                      >
+                        <FontAwesomeIcon icon={faTwitter} />
+                      </a>
+                    </li>
+                    <li className>
+                      <a
+                        title="linkedin"
+                        href="https://www.linkedin.com/company/st--jude-india"
+                      >
+                        <FontAwesomeIcon icon={faLinkedin} />
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
