@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Crimson+Text:ital,wght@1,600&family=Roboto:wght@900&family=Tiro+Bangla:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Crimson+Text:ital,wght@1,600&family=Noto+Serif:wght@700&family=Roboto:wght@900&family=Tiro+Bangla:ital@1&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -120,9 +124,29 @@ html {
   margin: 0 10px;
 }
 
+.font-head {
+  font-family: 'Caveat', cursive;
+  font-family: 'Crimson Text', serif;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Tiro Bangla', serif;
+}
+
 .subhead {
   margin-top: 20px;
   margin-bottom: 5px;
+}
+
+.font-text-head {
+  font-family: 'Caveat', cursive;
+  font-family: 'Crimson Text', serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Tiro Bangla', serif;
+}
+
+.font-text {
+  font-family: 'Crimson Text', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 textarea {

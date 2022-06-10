@@ -107,20 +107,20 @@ export default function Request() {
                   <form id="msform">
                     {/* progressbar */}
                     <ul id="progressbar">
-                      <li className="active" id="account"><strong className="indicator-text">Financial/Non-Financial</strong></li>
+                      <li className="active" id="account"><strong className="indicator-text font-text-head">Financial/Non-Financial</strong></li>
                       {/* <li id="request-status"><strong>Request Status</strong></li> */}
-                      <li id="personal"><strong className="indicator-text">Upload Documents</strong></li>
-                      <li id="payment"><strong className="indicator-text">Documents Verification </strong></li>
+                      <li id="personal"><strong className="indicator-text font-text-head">Upload Documents</strong></li>
+                      <li id="payment"><strong className="indicator-text font-text-head">Documents Verification </strong></li>
                     </ul>
 
                     {/* fieldsets */}
                     <fieldset>
                       <div className="form-card">
-                        <h3 className="modal-title w-100 request-heading">Request Page</h3>
+                        <h3 className="modal-title w-100 request-heading font-head">Request Page</h3>
                         <form action="/action_page.php" className="request-form">
 
                           <div id="group1">
-                            <p className="subhead"><b>What kind of help do you want us to provide?</b></p>
+                            <p className="subhead font-text"><b>What kind of help do you want us to provide?</b></p>
                             <div className="row">
                               <div className="col-md-3 col-sm-12">
                                 &nbsp;&nbsp; <input type="radio" name="group1" defaultValue="Financial" onChange={(e) => setTrack(e.target.value)} />
@@ -133,7 +133,7 @@ export default function Request() {
                             </div>
                           </div>
                           <div id="group2">
-                            <p className="subhead"><b>Please choose one of the category?</b></p>
+                            <p className="subhead font-text"><b>Please choose one of the category?</b></p>
                             <div className="row">
 
                               {track === 'Non-Financial' ?
@@ -179,10 +179,10 @@ export default function Request() {
                             </div>
                           </div>
 
-                          <p className="subhead"><b>Reason for request(Upto 50 words)</b></p>
+                          <p className="subhead font-text"><b>Reason for request(Upto 50 words)</b></p>
                           <textarea id="w3review" name="w3review" rows="1" cols="20" placeholder="Describe your request here..." onChange={(e) => setReason(e.target.value)}></textarea>
 
-                          <p className="subhead"><b>Checkmark the condition(In order to raise a request all the following conditions should be fulfilled.)</b></p>
+                          <p className="subhead font-text"><b>Checkmark the condition(In order to raise a request all the following conditions should be fulfilled.)</b></p>
                           <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" onClick={(e) => setAgree(e.target.checked)} />
                           <label for="vehicle1"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, distinctio.</label><br />
                           <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" onClick={(e) => setAgree2(e.target.checked)} />
