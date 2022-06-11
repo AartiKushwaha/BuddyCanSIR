@@ -7409,7 +7409,9 @@ textarea.form-control-lg {
  }
 
 
-
+.mid {
+  padding-left:30px;
+}
 .mt-0 {
   margin-top: 0.25rem !important;
 }

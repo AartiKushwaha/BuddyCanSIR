@@ -116,7 +116,7 @@ export default function Home() {
         <div className="container">
           <h2 className="mb-5 text-testimonial">What people are saying...</h2>
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 mid">
               <Card body className="size">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
               </Card>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mid">
               <Card body className="size">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
@@ -152,8 +152,8 @@ export default function Home() {
                 </div>
               </Card>
             </div>
-            <div className="col-lg-3">
-              <Card body className="size mid">
+            <div className="col-lg-3 mid">
+              <Card body className="size">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
                     className="img-fluid rounded-circle mb-3"
@@ -171,7 +171,7 @@ export default function Home() {
                 </div>
               </Card>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 mid">
               <Card body className="size">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
