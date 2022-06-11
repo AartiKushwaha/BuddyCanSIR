@@ -1421,6 +1421,8 @@ progress {
     width: 41.66666667%;
   }
 
+
+
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
@@ -7392,6 +7394,23 @@ textarea.form-control-lg {
 
 .mb-0 {
   margin-bottom: 0 !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/*.bor {*/
+/*  border:5px solid black;*/
+/*}*/
+.mid{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ }
+
+
+.mt-0 {
+  margin-top: 0.25rem !important;
 }
 
 .mb-1 {
@@ -11374,7 +11393,7 @@ header.masthead h1, header.masthead .h1 {
   padding: 3rem;
 }
 .showcase .showcase-img {
-  min-height: 30rem;
+  min-height:20rem;
   background-size: cover;
 }
 @media (min-width: 768px) {
@@ -11422,4 +11441,14 @@ header.masthead h1, header.masthead .h1 {
 footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.pd {
+  padding: 40px;
+}
+
+@media(min-width:200px) {
+  .pd {
+    padding-bottom: 0px;
+  }
 }

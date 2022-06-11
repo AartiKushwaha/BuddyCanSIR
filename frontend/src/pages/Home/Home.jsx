@@ -41,18 +41,18 @@ export default function Home() {
       {/* Image Showcases*/}
       <section className="showcase">
         <div className="container-fluid p-0">
-          <div className="row g-0 row1 py-4">
-            <div className="col-lg-6 order-lg-2 text-white showcase-img img-custom">
+          <div className="row g-0 row1 py-4 bor">
+            <div className="col-lg-6 order-lg-2 text-white showcase-img img-custom pd">
               <img
                 src="https://www.stjudechild.org/images/what/1wt.jpg"
-                className="img-fluid rounded-circle  border-circle"
+                className="img-fluid rounded-circle  border-circle mg"
                 alt="img"
               ></img>
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
               <Card body className="borderCard">
                 <h2 className="font-head-home">The Initiative</h2>
-                <p className="lead mb-0 text-style">
+                <p className="lead mb-0 mt-0 text-style ">
                   We believe every child has the right to fulfil her aspirations
                   and our credo has always been ‘Once a St. Judes child is always
                   a St. Judes child’. In keeping with this vision, our new
@@ -63,18 +63,18 @@ export default function Home() {
               </Card>
             </div>
           </div>
-          <div className="row g-0 py-4">
-            <div className="col-lg-6 text-white showcase-img">
+          <div className="row g-0 py-4 bor">
+            <div className="col-lg-6 text-white showcase-img pd">
               <img
                 src="https://www.stjudechild.org/images/what/8wt.jpg"
-                className="img-fluid rounded-circle border-circle"
+                className="img-fluid rounded-circle border-circle mg"
                 alt="img"
               ></img>
             </div>
             <div className="col-lg-6 my-auto showcase-text">
               <Card body className="borderCard text-style">
                 <h2 className="font-head-home">Vision</h2>
-                <p className="lead mb-0">
+                <p className="lead mb-0 mt-0">
                   We believe that the children, who have been nurtured at our
                   Centres to recover from cancer, are exceptionally brave and
                   special and have a lifelong bond with St. Judes. As their Go To
@@ -86,8 +86,8 @@ export default function Home() {
               </Card>
             </div>
           </div>
-          <div className="row g-0 py-4 ">
-            <div className="col-lg-6 order-lg-2 text-white showcase-img ">
+          <div className="row g-0 py-4 bor">
+            <div className="col-lg-6 order-lg-2 text-white showcase-img pd">
               <img
                 src="https://www.stjudechild.org/images/what/5wt.jpg"
                 className="img-fluid rounded-circle border-circle"
@@ -97,7 +97,7 @@ export default function Home() {
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
               <Card body className="borderCard">
                 <h2 className="font-head-home">Mission</h2>
-                <p className="lead mb-0 text-style">
+                <p className="lead mb-0 mt-0 text-style">
                   We believe that the children, who have been nurtured at our
                   Centres to recover from cancer, are exceptionally brave and
                   special and have a lifelong bond with St. Judes. As their Go To
@@ -153,7 +153,7 @@ export default function Home() {
               </Card>
             </div>
             <div className="col-lg-3">
-              <Card body className="size">
+              <Card body className="size mid">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
                     className="img-fluid rounded-circle mb-3"
