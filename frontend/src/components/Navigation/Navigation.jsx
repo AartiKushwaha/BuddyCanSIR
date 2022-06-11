@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import Translator from "../Translator/Translator";
 import "./navigation.css";
+import logo from './logo.png'
 
 export default function Navigation() {
   const { user, dispatch } = useContext(Context);
@@ -22,9 +23,9 @@ export default function Navigation() {
       <div className="container-fluid">
         <a href="/" className="navbar-brand">
           <img
-            src="https://i.pinimg.com/736x/6e/a9/d8/6ea9d8d5ac75d9c5d7a2a567c1e2bbdf.jpg"
-            height="28"
-            alt="CoolBrand"
+            src={logo}
+            height="39"
+            alt="{logo}"
           />
         </a>
         <button
