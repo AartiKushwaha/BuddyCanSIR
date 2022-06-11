@@ -234,7 +234,7 @@ export default function Home() {
                       Email Address Email is not valid.
                     </div>
                   </div>
-                  <div className="col-auto">
+                      <div className="col-auto">
                     <button
                       className="btn btn-primary btn-lg disabled"
                       id="submitButton"
