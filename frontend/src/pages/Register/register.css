@@ -1,0 +1,93 @@
+.reg-img {
+    background: url("../../assets/img/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.register{
+    height: auto;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    z-index: -999;
+}
+
+
+.register-container {
+    margin: auto;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.728);
+    border: 1px solid black;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 40px 60px;
+    z-index: 1;
+}
+
+.register-heading {
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type=email], input[type=password], input[type=number], input[type=tel]{
+    width: 100%;
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.disclaimer {
+    font-size: 10px;
+    color: red;
+}
+
+.register-button {
+    width: 100%;
+    background-color: #3AB255;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin: 20px 0 10px;
+    padding: 10px;
+}
+
+.register-button:disabled {
+    cursor: not-allowed;
+    background-color: #85ffa2;
+}
+
+.register-form {
+    margin: 10px 0;
+}
+
+.register-label {
+    margin: 5px 0;
+}
+
+@media (min-width: 564px) and (max-width: 1024px){
+    .register-container {
+        width: 50%;
+    }
+}
+@media (min-width: 426px) and (max-width: 564px){
+    .register-container {
+        width: 70%;
+        height: 80vh;
+    }
+}
+@media (max-width: 425px){
+    .register {
+        padding-top: 30px;
+    }
+    .register-container {
+        width: 90%;
+        height: auto;
+        padding: 20px 30px;
+    }
+    .circle1, .circle2, .circle3, .circle4 {
+        display: none;
+    }
+}
