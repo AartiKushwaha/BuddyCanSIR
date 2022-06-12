@@ -4,18 +4,17 @@ const RequestSchema = new mongoose.Schema({
     uid:{
         type: String,
         required: true,
-        unique: true,
     },
     username:{
         type: String,
         required: true,
-        unique: true
     },
     hospital_details: {
         type: Array,
     },
     address: {
         type: String,
+        default: "",
     },
     category: {
         type: String,
@@ -35,6 +34,26 @@ const RequestSchema = new mongoose.Schema({
         type: String,
         default: "",
     },
+    funded_doc: {
+        type: String,
+        default: "",
+    },
+    marksheet: {
+        type: String,
+        default: "",
+    },
+    attendance_record: {
+        type: String,
+        default: "",
+    },
+    education_fee_record: {
+        type: String,
+        default: "",
+    },
+    hospital_doc: {
+        type: String,
+        default: "",
+    }
     },
     { timestamps : true }
 );

@@ -7,18 +7,12 @@ import logo from './logo.png'
 
 export default function Navigation() {
   const { user, dispatch } = useContext(Context);
-  // const PF = "http://localhost:5000/images/";
 
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
     window.location.replace("/");
   };
   return (
-    //       <div className="navbar-nav ms-auto">
-    //       <Link className="nav-item nav-link" to="/login" > Login </Link> 
-    //       <Link className="nav-item nav-link" to="/request" > Request </Link> 
-    //       <Link className="nav-item nav-link" to="/admin" > Admin </Link> 
-    //       <Link className="nav-item nav-link" to="/profile" > Profile </Link> 
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a href="/" className="navbar-brand">
@@ -42,30 +36,63 @@ export default function Navigation() {
               {" "}
               <h4>BuddyCanSIR</h4>{" "}
             </Link>
-            {/* <Link className="nav-item nav-link" to="/" > Testimonials </Link>  */}
-            {/* <Link className="nav-item nav-link" to="/" > Contact Us </Link>  */}
           </div>
           <div className="navbar-nav ms-auto">
             <Translator />
 
             {user ? (
               <>
-                {user.username === "admin" ? <Link className="nav-item nav-link dropdown custom" to="/admin">
-                  Admin
-                </Link> : <Link className="nav-item nav-link dropdown custom" to="/request">
+                {user.username === "admin" ? <>
+                  <Link className="nav-item nav-link dropdown custom" to="/admin">
+                    Admin
+                  </Link>
+                  <Link className="nav-item nav-link dropdown custom" to="/register">
+                    Register
+                  </Link>
+                </> : <Link className="nav-item nav-link dropdown custom" to="/request">
                   Request
                 </Link>}
-                <Link className="nav-item nav-link dropdown custom" to={`/profile/${user._id}`}>
+                <Link
+                  className="nav-item nav-link dropdown dropdown-pull-right"
+                  to="/"
+                  style={{ padding: "0px" }}>
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="/"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      className="topImg"
+                      src={user.profile}
+                      alt="" />
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <Link className="nav-item nav-link dropdown custom-dropdown" to={`/profile/${user._id}`}>
+                        Profile
+                      </Link>
+                    </li>
+                    <li>
+                      <li className="nav-item nav-link dropdown custom-dropdown" onClick={handleLogout} style={{ cursor: "pointer" }}>
+                        Logout
+                      </li>
+                    </li>
+                  </ul>
+                </Link>
+                {/* <Link className="nav-item nav-link dropdown custom" to={`/profile/${user._id}`}>
                   Profile
-                  {/* <img
-                    className="topImg"
-                    src={user.profile}
-                    // src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                    alt="" /> */}
+                  // <img
+                  //   className="topImg"
+                  //   src={user.profile}
+                  //   // src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                  //   alt="" />
                 </Link>
                 <li className="nav-item nav-link dropdown custom" onClick={handleLogout} style={{ cursor: "pointer" }}>
-                  {user && "Logout"}
-                </li>
+                  Logout
+                </li> */}
               </>
             ) : (
               <li>
@@ -73,30 +100,6 @@ export default function Navigation() {
                   Login
                 </Link>
               </li>
-              // <Link className="nav-item nav-link dropdown dropdown-pull-right" to="/">
-              // <a
-              //   class="nav-link dropdown-toggle"
-              //   href="/"
-              //   id="navbarDropdown"
-              //   role="button"
-              //   data-bs-toggle="dropdown"
-              //   aria-expanded="false"
-              // >
-              //   Login
-              // </a>
-              // <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              //   <li>
-              //   <Link className="nav-item nav-link dropdown custom" to="/adminlogin">
-              //       Admin Login
-              //     </Link>
-              //   </li>
-              //   <li>
-              //   <Link className="nav-item nav-link dropdown custom" to="/login">
-              //       User Login
-              //     </Link>
-              //   </li>
-              // </ul>
-              // </Link>
             )}
           </div>
         </div>
