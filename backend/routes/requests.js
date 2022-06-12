@@ -15,21 +15,16 @@ router.post("/", async(req, res)=>{
 
  
 //UPDATE REQUEST
-//Not working currently
 router.put("/:id", async(req, res)=>{
     try {
         const request = await Request.findById(req.params.id);
-        if(request.username === req.body.username){
-            try{
-                const updatedRequest = await Request.findByIdAndUpdate(req.params.id, {
-                    $set: req.body
-                },{new:true});
-                res.status(200).json(updatedRequest);
-            }catch(err){
-                res.status(500).json(err);
-            }
-        } else {
-            res.status(401).json("You can update only your request")
+        try{
+            const updatedRequest = await Request.findByIdAndUpdate(req.params.id, {
+                $set: req.body
+            },{new:true});
+            res.status(200).json(updatedRequest);
+        }catch(err){
+            res.status(500).json(err);
         }
     } catch(err) {
         res.status(500).json(err);
@@ -40,15 +35,11 @@ router.put("/:id", async(req, res)=>{
 router.delete("/:id", async(req, res)=>{
     try {
         const request = await Request.findById(req.params.id);
-        if(request.username === req.body.username){
-            try{
-                await request.delete();
-                res.status(200).json("Post has been deleted...");
-            }catch(err){
-                res.status(500).json(err);
-            }
-        } else {
-            res.status(401).json("You can delete only your request")
+        try{
+            await request.delete();
+            res.status(200).json("Post has been deleted...");
+        }catch(err){
+            res.status(500).json(err);
         }
     } catch(err) {
         res.status(500).json(err);
@@ -69,6 +60,7 @@ router.get("/:id", async(req,res)=>{
 router.get("/", async(req,res)=>{
     const username = req.query.user;
     const track = req.query.track;
+    const status = req.query.status;
     try{
         let requests;
         if(username) {
@@ -76,6 +68,11 @@ router.get("/", async(req,res)=>{
         } else if(track) {
             requests = await Request.find({track: {
                 $in:[track],
+            },
+        });
+        } else if(status) {
+            requests = await Request.find({status: {
+                $in:[status],
             },
         });
         } else {

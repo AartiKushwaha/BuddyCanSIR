@@ -2,10 +2,7 @@ import React from "react";
 import "./home.css";
 import Card from "react-bootstrap/Card";
 import Navigation from "../../components/Navigation/Navigation";
-import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
-import Translator from "../../components/Translator/Translator";
-import AdminLogin from "../AdminLogin/AdminLogin";
 // import Testimonials from "../../components/Testimonials/Testimonials";
 
 export default function Home() {

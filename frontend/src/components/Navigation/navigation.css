@@ -2,11 +2,11 @@
     z-index: 1;
 }
 
-/* .navbar {
-    position: fixed;
+.navbar {
+    /* position: fixed; */
     width: 100vw;
     box-shadow: 5px 5px 20px 5px #0000004d;
-} */
+}
 
 .dropdown-pull-right {
     float: right !important;
@@ -19,8 +19,17 @@
     left: auto;
 }
 
+.custom {
+    padding: 20px;
+    margin: 0 10px;
+}
+
 .custom:active {
     background-color: #0d6efd;
+}
+
+.custom-dropdown:hover{
+    background-color: #b3d1ff;
 }
 
 .topImg{

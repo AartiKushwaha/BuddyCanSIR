@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema({
     },
     profile:{
         type: String,
-        default: "",   
+        default: "https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",   
     },
     phone_no:{
         type: Number,
@@ -29,9 +29,6 @@ const UserSchema = new mongoose.Schema({
     },
     address: {
         type: String,
-    },
-    hospital_details: {
-        type: Array,
     }
     },
     { timestamps : true }

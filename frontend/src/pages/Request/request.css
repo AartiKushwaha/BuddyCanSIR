@@ -75,12 +75,12 @@ html {
   content: "1";
 }
 
-#progressbar #personal:before {
+#progressbar #request-status:before {
   font-family: FontAwesome;
   content: "2";
 }
 
-#progressbar #payment:before {
+#progressbar #personal:before {
   font-family: FontAwesome;
   content: "3";
 }
@@ -161,6 +161,13 @@ textarea {
     font-size: 15px;
     border: none;
     padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .indicator-text {
@@ -181,6 +188,24 @@ textarea {
 
 input[type=file] {
   width: 100%;
+}
+
+.request-div {
+  margin: 10px 25% 120px;
+  border: 1px solid black;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(2, 1, 1, 0.475);
+}
+
+.info {
+  padding: 10px;
+  background: #3AB255;
+  color: white;
+  margin-bottom: 10px;
+  right: 0;
+  display: inline-block;
 }
 
 @media (min-width: 767px) and (max-width: 865px){
