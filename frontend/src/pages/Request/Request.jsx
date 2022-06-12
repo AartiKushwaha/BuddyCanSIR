@@ -306,11 +306,13 @@ export default function Request() {
   return (
     <>
       <Navigation />
-      <p className="info">USER: {user.username}</p>
-      <br />
-      <p className="info">STATUS: {status}</p>
-      <div className="request-div">
-      {Content()}
+      <div className="request img-request">
+        <p className="info">USER: {user.username}</p>
+        <br />
+        <p className="info">STATUS: {status}</p>
+          <div className="request-div">
+            {Content()}
+        </div>
       </div>
       <Footer />
     </>

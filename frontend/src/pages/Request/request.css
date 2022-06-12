@@ -16,6 +16,26 @@ html {
   height: 100vh;
 }
 
+
+.request {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 50px;
+  /*border: 1px solid green;*/
+  z-index: -999;
+}
+
+.img-request {
+  background: url("../../assets/img/background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  /*border: 1px solid blue;*/
+}
+
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
   display: none;
