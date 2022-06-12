@@ -31,9 +31,9 @@ export default function Login() {
     return (
         <>
             <Navigation />
-                <div className="login ">
+                <div className="login bck-img">
                     <div className="login-container">
-                        <p className="login-heading">User Login</p>
+                        <p className="login-heading">Login</p>
                         <form className="login-form" onSubmit={handleSubmit}>
                             <label className="login-label">
                                 Username: <br />

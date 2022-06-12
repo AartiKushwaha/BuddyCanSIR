@@ -5,6 +5,16 @@
     z-index: -999;
 }
 
+.bck-img {
+    background: url("../../assets/img/background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}
+
 
 .login-container {
     margin: auto;
