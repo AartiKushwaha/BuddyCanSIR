@@ -712,6 +712,15 @@ progress {
   margin-top: var(--bs-gutter-y);
 }
 
+.borderCard {
+  width: 50vw;
+}
+
+/*.right {*/
+/*  margin-right:20px;*/
+/*  !*border : 10px solid blue;*!*/
+/*}*/
+
 .text-style {
   font-family: 'Mulish', sans-serif;
   font-weight: lighter;
@@ -7543,9 +7552,6 @@ textarea.form-control-lg {
   padding-bottom: 1rem !important;
 }
 
-.bor {
-  border: 10px solid red;
-}
 
 .py-4 {
   padding-top: 1.5rem !important;
@@ -7971,9 +7977,6 @@ textarea.form-control-lg {
           user-select: none !important;
 }
 
-.border-circle {
-  border : 5px solid black;
-}
 
 .pe-none {
   pointer-events: none !important;
@@ -8003,9 +8006,9 @@ textarea.form-control-lg {
   border-radius: 0.3rem !important;
 }
 
-.rounded-circle {
-  border-radius: 50% !important;
-}
+/*.rounded-circle {*/
+/*  border-radius: 50% !important;*/
+/*}*/
 
 .rounded-pill {
   border-radius: 50rem !important;
