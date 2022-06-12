@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import Translator from "../Translator/Translator";
 import "./navigation.css";
 import logo from './logo.png'
 
@@ -38,7 +37,7 @@ export default function Navigation() {
             </Link>
           </div>
           <div className="navbar-nav ms-auto">
-            <Translator />
+            
 
             {user ? (
               <>

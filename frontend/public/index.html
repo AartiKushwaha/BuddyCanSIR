@@ -32,45 +32,16 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     
     
-    <div id="root"></div>
-    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement(
-      {
-        pageLanguage: "en",
-        layout: window.google.translate.TranslateElement.InlineLayout.VERTICAL,
-      }, 
-      'google_translate_element'
-    );
-  }
-</script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-
-    <div id="google_translate_element"></div>
-	
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {pageLanguage: 'en'},
-          'google_translate_element'
-        );
-      }
-    </script>
     
-    <script type="text/javascript" src=
-  "https://translate.google.com/translate_a/element.js?
-      cb=googleTranslateElementInit">
-    </script>
+    <div id="google_translate_element" style="float: right;"></div>
+<script> 
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en'
+  }, 'google_translate_element');
+}
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
 
 <script type="text/javascript">
   (function(d, m){
@@ -83,6 +54,8 @@
   })(document, window.kommunicate || {});
 /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
 </script>
+
+<div id="root"></div>
 
     <script>
       if('serviceWorker' in navigator){
