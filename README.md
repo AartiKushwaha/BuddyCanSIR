@@ -20,7 +20,7 @@
 
 <img alt="HTML" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/><img alt="CSS" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/><img alt="Javascript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/><img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/><img alt="NodeJs" src="https://img.shields.io/badge/Node.js-%23000.svg?style=for-the-badge&logo=node.js&logoColor=white"/><img alt="MongoDb" src="https://img.shields.io/badge/MongoDB-%2307405e.svg?style=for-the-badge&logo=mongodb&logoColor=white" /><img alt="ExpressJs" src="https://img.shields.io/badge/Express.js-%23E34F26.svg?style=for-the-badge&logo=expressjs&logoColor=%23F7DF1E"/><img alt="React" src="https://img.shields.io/badge/React-0078d7.svg?style=for-the-badge&logo=react&logoColor=white"/><img alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/>
 
-***Frontend*** : HTML, CSS, JS, Bootstrap
+***Frontend*** : HTML, CSS, JS, Bootstrap, React
 
 ***Backend*** : NodeJs, ExpressJs
 
@@ -70,13 +70,13 @@
 <a id="challenges"></a>
 ## 💡 Challenges faced
 - Had technical setup issue while authenticating users and admin.
-- Integrating simultaneous working of request and admin page and keeping track of the status of requests .
-- Faced difficulty while integrating the notification facility for the user and admin.
+- Integrating simultaneous working of request and admin page and keeping track of the status of requests.
+- Faced difficulty while integrating the sms/email notification facility for the user and admin.
 
 <a id="scope"></a>
 ## 🚧 Future Scope/ What's next?
 - [ ] Implementing push notification feature for users.
-- [ ] Generating multiple requests while one request is on-going.
+- [ ] Generating multiple requests per user.
 
 <a id="resources"></a>
 ## 📚 Resources
@@ -85,6 +85,7 @@
 - [CSS Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JS Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+- [ReactJs Documentation](https://reactjs.org/docs/getting-started.html)
 - [NodeJs Documentation](https://nodejs.dev/learn)
 - [ExpressJs Documentation](https://expressjs.com/en/guide/routing.html)
 - [MongoDb Documentation](https://www.mongodb.com/docs/atlas/getting-started/)
@@ -101,8 +102,7 @@ Take These Steps to configure the Project :
 * Install NodeJs from [Nodejs](https://nodejs.org/en/)
 * Open the repo folder in VSCode or any other IDE.
 * Run `npm install` in both backend and frontend folder.
-* Go to package.json in frontend folder and add `"proxy":"http://localhost:5000/api/"`
-* Open .env file under backend file and change `username:password` to `PunervaSingh:1234`.
+* Go to package.json in frontend folder and add `"proxy":"http://localhost:5000/api/"`.
 * Install the additional packages that show up in warning/errors by `npm i package-name`.
 * Run `npm install` in terminal under both frontend and backend folders.
 
