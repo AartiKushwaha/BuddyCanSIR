@@ -608,7 +608,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -7468,6 +7468,7 @@ textarea.form-control-lg {
   margin-left: auto !important;
 }
 
+
 .p-0 {
   padding: 0 !important;
 }
@@ -7540,6 +7541,10 @@ textarea.form-control-lg {
 .py-3 {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+}
+
+.bor {
+  border: 10px solid red;
 }
 
 .py-4 {
@@ -11454,4 +11459,8 @@ footer.footer {
   .pd {
     padding-bottom: 0px;
   }
+}
+
+.wid {
+  width: 80%;
 }
