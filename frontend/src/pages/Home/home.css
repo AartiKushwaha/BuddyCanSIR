@@ -11420,16 +11420,22 @@ header.masthead:before {
   opacity: 0.5;
 }
 header.masthead h1, header.masthead .h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
+/* header.masthead h4{
+  font-size: 1rem;
+} */
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
   header.masthead h1, header.masthead .h1 {
-    font-size: 3rem;
+    font-size: 5rem;
   }
+  /* header.masthead h4{
+    font-size: 2rem;
+  } */
 }
 
 
