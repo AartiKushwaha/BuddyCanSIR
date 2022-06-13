@@ -57,8 +57,8 @@
 ![Register Page](https://user-images.githubusercontent.com/77791154/173410379-93d1794a-5f4d-4d61-9360-ea7a12dc0cae.png)
 ### Admin Page
 ![admin page](https://user-images.githubusercontent.com/77791154/173410488-cf908187-0d7a-40a9-8798-67e025794d26.png)
-### Requests Page
-![Request Page](https://user-images.githubusercontent.com/77791154/173410515-5d941c23-cdd7-4611-b839-93f1e80a553f.png)
+### Request Page
+![Req Page](https://user-images.githubusercontent.com/77791154/173414160-baa27d1b-6cfb-46dc-9871-b34a5d8a4e7f.png)
 ### Profile Page
 ![Profile Page](https://user-images.githubusercontent.com/77791154/173410548-7e68168e-abbc-4c64-8788-09a7a470fdc2.png)
 
