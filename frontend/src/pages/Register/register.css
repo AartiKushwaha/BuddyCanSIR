@@ -75,10 +75,9 @@ input[type=email], input[type=password], input[type=number], input[type=tel]{
 @media (min-width: 426px) and (max-width: 564px){
     .register-container {
         width: 70%;
-        height: 80vh;
     }
 }
-@media (max-width: 425px){
+@media (max-width: 426px){
     .register {
         padding-top: 30px;
     }
