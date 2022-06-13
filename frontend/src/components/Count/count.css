@@ -1,0 +1,7 @@
+.notification {
+    background: #3AB255;
+    padding: 5px 10px;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

@@ -75,16 +75,16 @@ export default function Admin() {
 
                   <div className="sd-body">
                   <p className="filter-subheading">Application Type:</p>
-                  <Link to={"/admin?track=financial"}>Financial</Link>
+                  <Link className="admin-filter-link" to={"/admin?track=financial"}>Financial</Link>
                   <br />
-                  <Link to={"/admin?track=non-financial"}>Non-Financial</Link>
-                  <p style={{ marginTop: "20px" }}><b>OR</b></p>
+                  <Link className="admin-filter-link" to={"/admin?track=non-financial"}>Non-Financial</Link>
+                  <p style={{ marginTop: "20px", color: "rgba(151, 145, 145, 0.893)", textAlign: "center" }}>or</p>
                   <p className="filter-subheading">Application Status:</p>
-                  <Link to={"/admin?status=requested"}>Requested</Link><br />
-                  <Link to={"/admin?status=verified"}>Verified</Link><br />
-                  <Link to={"/admin?status=doc_uploaded"}>Document Received</Link><br />
-                  <Link to={"/admin?status=approved"}>Approved</Link>
-                  <p style={{ marginTop: "20px" }}><b>OR</b></p>
+                  <Link className="admin-filter-link" to={"/admin?status=requested"}>Requested</Link><br />
+                  <Link className="admin-filter-link" to={"/admin?status=verified"}>Verified</Link><br />
+                  <Link className="admin-filter-link" to={"/admin?status=doc_uploaded"}>Document Received</Link><br />
+                  <Link className="admin-filter-link" to={"/admin?status=approved"}>Approved</Link>
+                  <p style={{ marginTop: "20px", color: "rgba(151, 145, 145, 0.893)", textAlign: "center" }}>or</p>
                   <input type="text"
                     name="text"
                     placeholder="Enter your username"
