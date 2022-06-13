@@ -26,7 +26,7 @@
 
 ***Database*** : MongoDb
 
-***API/Clouds*** : Google Translate, Cloudinary, Twilio, MongoDb Atlas
+***API/Clouds*** : Google Translate, Cloudinary, Twilio, MongoDb Atlas, EmailJs
 
 ***Other*** : Git - Version Control, Visual Studio Code
 
@@ -78,6 +78,8 @@
 ## 🚧 Future Scope/ What's next?
 - [ ] Implementing push notification feature for users.
 - [ ] Generating multiple requests per user.
+- [ ] Customize chatbot according to the needs.
+- [ ] Add donate option for government organizations to make donations.
 
 <a id="resources"></a>
 ## 📚 Resources
