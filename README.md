@@ -36,12 +36,13 @@
 - The portal has separate pages for admin and user login.
 - Registered users can make requests for availing the services provided by the NGO.
 - The administration will get notified of new requests generated via email/sms notifications.
-- Users will be get notification whether his/her request has been approved or denied and then can proceed to next step of uploading documents for verification.
+- Users will get notification whether his/her request has been approved or denied and then can proceed to next step of uploading documents for verification.
 - The documents will be transfered to the administration and user will be notified of approval/denial.
 - The portal is multilingual so that the users across the country can easily access it.
-- It is light weight and users can acsess it with limited internet connectivity.
+- It is light weight and users can access it with limited internet connectivity.
 - The portal can also be viewed in offline mode and gets updated as soon as internet connectivity is restored.
 - Is fully responsive and works well with all screen sizes.
+- The website also has a chatbot which assists the user in case of any difficulty.
 - [Add more features](#feature-request)...
 
 <a id="overview"></a>
