@@ -1,4 +1,98 @@
-.pagination-container {
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 40px 0;
+}
+.pages {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.page {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  color: black;
+  text-decoration: none;
+}
+.page:hover {
+  background-color: #3AB255;
+  color: #fff;
+}
+
+.active {
+  background-color: #3AB255;
+  color: #fff;
+}
+
+.btn {
+  background-color: #fff;
+  border: 1px solid #3AB255;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  background-color: #3AB255;
+}
+.btn--icon {
+  height: 24px;
+  width: 24px;
+  stroke: #3AB255;
+}
+.btn--icon:hover {
+  stroke: #fff;
+}
+
+
+
+/* .paginationBttns{
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a{
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover{
+  color: white;
+  background-color: black;
+}
+
+.paginationActive a{
+  color:white;
+  background-color: black;
+} */
+
+
+
+
+
+
+/* .pagination-container {
     display: flex;
     list-style-type: none;
   
@@ -63,4 +157,4 @@
 .pagination-container .pagination-item .disabled:hover {
   background-color: transparent;
   cursor: default;
-}
+} */

@@ -24,13 +24,7 @@ export default function Cards({ data }) {
             <Card item={item} s={item.status} u={item._id}/>
           );
         })}
-        {/* <Pagination
-          className="pagination-bar"
-          currentPage={currentPage}
-          totalCount={data.length}
-          pageSize={PageSize}
-          onPageChange={(page) => setCurrentPage(page)}
-        /> */}
+        <Pagination />
       </div>
     </>
   );
