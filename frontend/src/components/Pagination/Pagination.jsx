@@ -8,7 +8,7 @@ export default function Pagination(){
   return(
     <>
     <div class="pagination">
-      <button class="btn">
+      <button class="pageBtn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="btn--icon"
@@ -34,7 +34,7 @@ export default function Pagination(){
         <a class="page">...</a>
         <a class="page">23</a>
       </div>
-      <button class="btn">
+      <button class="pageBtn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="btn--icon"

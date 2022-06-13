@@ -34,7 +34,7 @@
   color: #fff;
 }
 
-.btn {
+.pageBtn {
   background-color: #fff;
   border: 1px solid #3AB255;
   height: 40px;
@@ -46,15 +46,15 @@
   align-items: center;
   justify-content: center;
 }
-.btn:hover {
+.pageBtn:hover {
   background-color: #3AB255;
 }
-.btn--icon {
+.pageBtn--icon {
   height: 24px;
   width: 24px;
   stroke: #3AB255;
 }
-.btn--icon:hover {
+.pageBtn--icon:hover {
   stroke: #fff;
 }
 
