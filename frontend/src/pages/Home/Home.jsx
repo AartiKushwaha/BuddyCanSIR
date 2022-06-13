@@ -47,8 +47,8 @@ export default function Home() {
               ></img>
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-              <Card body className="borderCard left ">
-                <h2 className="font-head-home">The Initiative</h2>
+              <Card body className="borderCard left bs">
+                <h2 className="font-head-home col">The Initiative</h2>
                 <p className="lead mb-0 mt-0 text-style ">
                   We believe every child has the right to fulfil her aspirations
                   and our credo has always been ‘Once a St. Judes child is always
@@ -61,9 +61,16 @@ export default function Home() {
             </div>
           </div>
           <div className="row g-0 py-4 bor">
+            <div className="col-lg-6 text-white showcase-img pd">
+              <img
+                  src="https://www.stjudechild.org/images/what/8wt.jpg"
+                  className="img-fluidl mg"
+                  alt="img"
+              ></img>
+            </div>
             <div className="col-lg-6 my-auto showcase-text">
-              <Card body className="borderCard ">
-                <h2 className="font-head-home">Vision</h2>
+              <Card body className="borderCard bs pdv">
+                <h2 className="font-head-home col">Vision</h2>
                 <p className="lead mb-0 mt-0 text-style">
                   We believe that the children, who have been nurtured at our
                   Centres to recover from cancer, are exceptionally brave and
@@ -75,13 +82,6 @@ export default function Home() {
                 </p>
               </Card>
             </div>
-            <div className="col-lg-6 text-white showcase-img pd">
-              <img
-                  src="https://www.stjudechild.org/images/what/8wt.jpg"
-                  className="img-fluid mg"
-                  alt="img"
-              ></img>
-            </div>
           </div>
           <div className="row g-0 py-4 bor">
             <div className="col-lg-6 order-lg-2 text-white showcase-img pd">
@@ -92,8 +92,8 @@ export default function Home() {
               ></img>
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-              <Card body className="borderCard">
-                <h2 className="font-head-home">Mission</h2>
+              <Card body className="borderCard bs">
+                <h2 className="font-head-home col">Mission</h2>
                 <p className="lead mb-0 mt-0 text-style">
                   We believe that the children, who have been nurtured at our
                   Centres to recover from cancer, are exceptionally brave and
@@ -114,7 +114,7 @@ export default function Home() {
           <h2 className="mb-5 text-testimonial">What people are saying...</h2>
           <div className="row">
             <div className="col-lg-3 mid">
-              <Card body className="size">
+              <Card body className="size bs">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
                     className="img-fluid rounded-circle mb-3"
@@ -123,34 +123,44 @@ export default function Home() {
                   />
                   <h5>Venu Nair</h5>
                   <h6 className="font-testimonial">(MD, Marks and Spencer Reliance, India)</h6>
-                  <p className="font-weight-light mb-0 font-text-testimonial">
-                    "A very Inspiring hour with Ms.Banerji. What a fantastic set
-                    of activites being done here in a extremely professional
-                    manner. Truly worthy of huge appreciation and respect. Made my
-                    Day"
-                  </p>
+                  <div className="pad-ah-vn">
+                    <hr/>
+                  </div>
+                  <div className="spacing">
+                    <p className="font-weight-light mb-0 font-text-testimonial">
+                      "A very inspiring hour with Ms. Banerji. What a fantastic set
+                      of activites being done here in a extremely professional
+                      manner. Truly worthy of huge appreciation and respect. Made my
+                      day"
+                    </p>
+                  </div>
                 </div>
               </Card>
             </div>
             <div className="col-lg-3 mid">
-              <Card body className="size">
+              <Card body className="size bs">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
-                    className="img-fluid rounded-circle mb-3"
+                    className="img-fluid rounded-circle mb-3 "
                     src={require("../../assets/img/andrea.jpg")}
                     alt="..."
                   />
                   <h5>Andrea Hamilton</h5>
                   <h6 className="font-testimonial">(Philantropy & Social Impact, Generation Capital)</h6>
-                  <p className="font-weight-light mb-0 font-text-testimonial">
-                    "Very well maintained, hygiene and patients are kept under
-                    very good care. Hospitable Staff."
-                  </p>
+                  <div className="pad-ah-vn">
+                    <hr/>
+                  </div>
+                  <div className="spacing">
+                    <p className="font-weight-light mb-0 font-text-testimonial">
+                      "Very well maintained, hygiene and patients are kept under
+                      very good care. Hospitable staff."
+                    </p>
+                  </div>
                 </div>
               </Card>
             </div>
             <div className="col-lg-3 mid">
-              <Card body className="size">
+              <Card body className="size bs">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
                     className="img-fluid rounded-circle mb-3"
@@ -159,17 +169,22 @@ export default function Home() {
                   />
                   <h5>RK Krishna Kumar</h5>
                   <h6 className="font-testimonial">(Retd. Director, Tata Sons)</h6>
-                  <p className="font-weight-light mb-0 font-text-testimonial">
-                    "The world is a dark and forbidding place. A visit to this
-                    centre has lit a light in my heart. I can only thank all the
-                    people here for giving me this unique privilege of being here
-                    this morning. There is so much hope and goodness here."
-                  </p>
+                  <div className="pad-rk">
+                    <hr/>
+                  </div>
+                  <div className="spacing">
+                    <p className="font-weight-light mb-0 font-text-testimonial">
+                      "The world is a dark and forbidding place. A visit to this
+                      centre has lit a light in my heart. I can only thank all the
+                      people here for giving me this unique privilege of being here
+                      this morning. There is so much hope and goodness here."
+                    </p>
+                  </div>
                 </div>
               </Card>
             </div>
             <div className="col-lg-3 mid">
-              <Card body className="size">
+              <Card body className="size bs">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
                     className="img-fluid rounded-circle mb-3"
@@ -178,11 +193,16 @@ export default function Home() {
                   />
                   <h5>Sachin & Anjali Tendulkar</h5>
                   <h6 className="font-testimonial">(Philanthropist)</h6>
-                  <p className="font-weight-light mb-0 font-text-testimonial">
-                    "It was an enlightening visit. We were most impressed by
-                    everything! It was an enlightening visit. We were most
-                    impressed by everything! "
-                  </p>
+                  <div className="pad-at">
+                    <hr/>
+                  </div>
+                  <div className="spacing">
+                    <p className="font-weight-light mb-0 font-text-testimonial">
+                      "It was an enlightening visit. We were most impressed by
+                      everything! It was an enlightening visit. We were most
+                      impressed by everything!"
+                    </p>
+                  </div>
                 </div>
               </Card>
             </div>

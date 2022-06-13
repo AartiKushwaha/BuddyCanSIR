@@ -25,6 +25,10 @@
     margin: 5px;
 }
 
+.spacing {
+    margin-top:30px;
+}
+
 .filter-subheading {
     font-weight: bold;
     margin: 20px 0 5px 0;
