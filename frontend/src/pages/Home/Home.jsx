@@ -130,8 +130,7 @@ export default function Home() {
                     <p className="font-weight-light mb-0 font-text-testimonial">
                       "A very inspiring hour with Ms. Banerji. What a fantastic set
                       of activites being done here in a extremely professional
-                      manner. Truly worthy of huge appreciation and respect. Made my
-                      day"
+                      manner."
                     </p>
                   </div>
                 </div>
@@ -174,10 +173,9 @@ export default function Home() {
                   </div>
                   <div className="spacing">
                     <p className="font-weight-light mb-0 font-text-testimonial">
-                      "The world is a dark and forbidding place. A visit to this
+                      "A visit to this
                       centre has lit a light in my heart. I can only thank all the
-                      people here for giving me this unique privilege of being here
-                      this morning. There is so much hope and goodness here."
+                      people here for giving me this unique privilege."
                     </p>
                   </div>
                 </div>
