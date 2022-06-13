@@ -42,12 +42,12 @@ export default function Home() {
             <div className="col-lg-6 order-lg-2 text-white showcase-img img-custom pd">
               <img
                 src="https://www.stjudechild.org/images/what/1wt.jpg"
-                className="img-fluid rounded-circle  border-circle mg"
+                className="img-fluid mg"
                 alt="img"
               ></img>
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
-              <Card body className="borderCard">
+              <Card body className="borderCard left ">
                 <h2 className="font-head-home">The Initiative</h2>
                 <p className="lead mb-0 mt-0 text-style ">
                   We believe every child has the right to fulfil her aspirations
@@ -61,17 +61,10 @@ export default function Home() {
             </div>
           </div>
           <div className="row g-0 py-4 bor">
-            <div className="col-lg-6 text-white showcase-img pd">
-              <img
-                src="https://www.stjudechild.org/images/what/8wt.jpg"
-                className="img-fluid rounded-circle border-circle mg"
-                alt="img"
-              ></img>
-            </div>
             <div className="col-lg-6 my-auto showcase-text">
-              <Card body className="borderCard text-style">
+              <Card body className="borderCard ">
                 <h2 className="font-head-home">Vision</h2>
-                <p className="lead mb-0 mt-0">
+                <p className="lead mb-0 mt-0 text-style">
                   We believe that the children, who have been nurtured at our
                   Centres to recover from cancer, are exceptionally brave and
                   special and have a lifelong bond with St. Judes. As their Go To
@@ -82,12 +75,19 @@ export default function Home() {
                 </p>
               </Card>
             </div>
+            <div className="col-lg-6 text-white showcase-img pd">
+              <img
+                  src="https://www.stjudechild.org/images/what/8wt.jpg"
+                  className="img-fluid mg"
+                  alt="img"
+              ></img>
+            </div>
           </div>
           <div className="row g-0 py-4 bor">
             <div className="col-lg-6 order-lg-2 text-white showcase-img pd">
               <img
                 src="https://www.stjudechild.org/images/what/5wt.jpg"
-                className="img-fluid rounded-circle border-circle"
+                className="img-fluid"
                 alt="img"
               ></img>
             </div>

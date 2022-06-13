@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Context } from "../../context/Context";
-import Translator from "../Translator/Translator";
 import "./navigation.css";
 import logo from './logo.png'
 import axios from "axios";
@@ -40,7 +39,7 @@ export default function Navigation() {
             </Link>
           </div>
           <div className="navbar-nav ms-auto">
-            <Translator />
+            
 
             {user ? (
               <>
