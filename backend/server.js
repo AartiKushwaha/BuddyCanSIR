@@ -9,8 +9,8 @@ const trackRoute = require("./routes/tracks");
 const multer = require("multer");
 const path = require("path");
 const bodyParser = require("body-parser");
-var sid = "AC8bac1b724e2463597f0458b3120bf254";
-var auth_token = "5c2e3a9a019ef030e7be5bfb11b6df8d";
+var sid = "SID";
+var auth_token = "AUTH_TOKEN";
 var twilio = require("twilio")(sid, auth_token);
 
 app.use(express.urlencoded({ extended: false }));
