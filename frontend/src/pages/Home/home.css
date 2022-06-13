@@ -610,21 +610,35 @@ progress {
 .img-fluid {
   max-width: 80%;
   height: auto;
+  margin: 4px 0 0 4px;
+  box-shadow: 0 0 0 20px #fff;
+}
+
+.img-fluidl {
+  max-width: 80%;
+  height: auto;
+  margin: 4px 0 0 120px;
+  box-shadow: 0 0 0 20px #fff;
 }
 
 .font-testimonial {
-  font-weight: inherit;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .text-testimonial {
   text-transform: uppercase;
-  font-family: 'Kdam Thmor Pro', sans-serif;
-  font-weight: bold;
+  /*font-weight: bold;*/
+  font-family: 'Slabo 27px', serif;
 }
 
 .font-text-testimonial {
-  font-family: 'Coming Soon', cursive;
-  font-weight: inherit;
+  font-family: "Gill Sans Ultra Bold";
+
+}
+
+.col {
+  color: #1542da;
 }
 
 .img-thumbnail {
@@ -713,7 +727,7 @@ progress {
 }
 
 .borderCard {
-  width: 50vw;
+  width: 40vw;
 }
 
 /*.right {*/
@@ -7740,7 +7754,7 @@ textarea.form-control-lg {
 }
 
 .text-center {
-  text-align: center !important;
+  text-align:center  !important;
 }
 
 .text-decoration-none {
@@ -11372,14 +11386,16 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("./../../assets/img/bg.jpg") no-repeat center center;
+  background: url("./../../assets/img/img.png") no-repeat center center;
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 8rem;
+  height: 90vh;
 }
+
 header.masthead:before {
   content: "";
-  position: absolute;
+  justify-content: flex-end;
   background-color: #1c375e;
   height: 100%;
   width: 100%;
@@ -11400,8 +11416,10 @@ header.masthead h1, header.masthead .h1 {
   }
 }
 
+
+
 .showcase .showcase-text {
-  padding: 3rem;
+  padding: 0;
 }
 .showcase .showcase-img {
   min-height:20rem;
@@ -11409,7 +11427,7 @@ header.masthead h1, header.masthead .h1 {
 }
 @media (min-width: 768px) {
   .showcase .showcase-text {
-    padding: 7rem;
+    padding: 2rem;
   }
 }
 
@@ -11425,9 +11443,54 @@ header.masthead h1, header.masthead .h1 {
   box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
+.pad-rk {
+  padding-top:18px;
+}
+
+.pad-rk hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+.pad-at hr {
+  border: none;
+  height: 2px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+.pad-ah-vn hr {
+  border: none;
+  height: 2px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+.pad-ah-vn {
+  padding-top:1px;
+}
+
+.pad-at {
+  padding-top:1px;
+}
+
 .size {
-  width:15rem;
-  height:32rem;
+  width:20rem;
+  height:34rem;
+}
+
+.pdv {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.bs {
+  box-shadow: 5px 5px 8px 5px rgba(56, 54, 54, 0.37);
 }
 
 .call-to-action {
