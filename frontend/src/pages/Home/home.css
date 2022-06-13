@@ -13,7 +13,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins&display=swap');
 .navbar{
   z-index: 1;
 }
@@ -116,6 +116,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1, .h1 {
@@ -624,16 +625,17 @@ progress {
 .font-testimonial {
   font-weight: bold;
   color: rgba(0, 0, 0, 0.4);
+  font-family: 'Poppins', sans-serif;
 }
 
 .text-testimonial {
   text-transform: uppercase;
   /*font-weight: bold;*/
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .font-text-testimonial {
-  font-family: "Gill Sans Ultra Bold";
+  font-family: 'Poppins', sans-serif;
 
 }
 
@@ -705,7 +707,8 @@ progress {
 }
 
 .font-head-home {
-  font-family: 'Merriweather', serif;
+  font-family: 'Poppins', sans-serif;
+  color: black;
 }
 
 .row {
@@ -736,7 +739,7 @@ progress {
 /*}*/
 
 .text-style {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
 }
 
@@ -7755,6 +7758,7 @@ textarea.form-control-lg {
 
 .text-center {
   text-align:center  !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .text-decoration-none {
@@ -11386,7 +11390,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("./../../assets/img/img.png") no-repeat center center;
+  background: url("./../../assets/img/bgimg1.png") no-repeat center center;
   background-size: cover;
   padding-top: 6rem;
   padding-bottom: 8rem;
