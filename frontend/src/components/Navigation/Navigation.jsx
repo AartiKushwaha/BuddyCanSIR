@@ -1,8 +1,10 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./navigation.css";
 import logo from './logo.png'
+import axios from "axios";
+import Count from "../Count/Count";
 
 export default function Navigation() {
   const { user, dispatch } = useContext(Context);
@@ -43,7 +45,7 @@ export default function Navigation() {
               <>
                 {user.username === "admin" ? <>
                   <Link className="nav-item nav-link dropdown custom" to="/admin">
-                    Admin
+                    Admin <Count />
                   </Link>
                   <Link className="nav-item nav-link dropdown custom" to="/register">
                     Register
