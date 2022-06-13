@@ -207,12 +207,6 @@ export default function Request() {
             // onClick={(e) => setAgree2(e.target.checked)}
             />
             <label className="doc-text" for="condition2">I have recent schooling year marksheet.</label><br />
-            <input type="checkbox" id="condition3" name="condition3" value="c3"
-            // onClick={(e) => setAgree3(e.target.checked)}
-            />
-            <label className="doc-text" for="condition3"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, distinctio.</label><br />
-            <div className="center">
-            </div>
             <button type="submit" className="doc-text request-btn" onClick={sentText}>Submit</button>  
           </form>
         </>)
