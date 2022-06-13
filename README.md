@@ -49,11 +49,8 @@
 ## 📖 Application Overview
 ### Home Page
 ![Home Page1](https://user-images.githubusercontent.com/77791154/173409996-330f4b8c-b982-48f9-bead-dbef4be4bc80.png)
-]
 ![Home Page2](https://user-images.githubusercontent.com/77791154/173410091-dd856669-f5f3-433c-980b-9b241eb81c6c.png)
-]
 ![Chatbot](https://user-images.githubusercontent.com/77791154/173410243-0efbfce8-a207-4855-a599-82c496dd49ad.png)
-e Image]
 ### Login Page 
 ![Login Page](https://user-images.githubusercontent.com/77791154/173410313-81ccea8a-58dc-455e-9f4f-e5a033d2c64f.png)
 ### New user Registeration Page
