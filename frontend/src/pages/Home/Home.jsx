@@ -40,11 +40,6 @@ export default function Home() {
         <div className="container-fluid p-0">
           <div className="row g-0 row1 py-4 bor">
             <div className="col-lg-6 order-lg-2 text-white showcase-img img-custom pd">
-              <img
-                src="https://www.stjudechild.org/images/what/1wt.jpg"
-                className="img-fluid mg"
-                alt="img"
-              ></img>
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
               <Card body className="borderCard left bs">
@@ -61,12 +56,7 @@ export default function Home() {
             </div>
           </div>
           <div className="row g-0 py-4 bor">
-            <div className="col-lg-6 text-white showcase-img pd">
-              <img
-                  src="https://www.stjudechild.org/images/what/8wt.jpg"
-                  className="img-fluidl mg"
-                  alt="img"
-              ></img>
+            <div className="col-lg-6 text-white showcase-img img-custom1 pd">
             </div>
             <div className="col-lg-6 my-auto showcase-text">
               <Card body className="borderCard bs pdv">
@@ -84,12 +74,7 @@ export default function Home() {
             </div>
           </div>
           <div className="row g-0 py-4 bor">
-            <div className="col-lg-6 order-lg-2 text-white showcase-img pd">
-              <img
-                src="https://www.stjudechild.org/images/what/5wt.jpg"
-                className="img-fluid"
-                alt="img"
-              ></img>
+            <div className="col-lg-6 order-lg-2 text-white showcase-img img-custom2 pd">
             </div>
             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
               <Card body className="borderCard bs">
@@ -117,7 +102,7 @@ export default function Home() {
               <Card body className="size bs">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
-                    className="img-fluid rounded-circle mb-3"
+                    className="test-img img-fluid rounded-circle mb-3"
                     src={require("../../assets/img/venu.jpg")}
                     alt="..."
                   />
@@ -140,7 +125,7 @@ export default function Home() {
               <Card body className="size bs">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
-                    className="img-fluid rounded-circle mb-3 "
+                    className="test-img img-fluid rounded-circle mb-3 "
                     src={require("../../assets/img/andrea.jpg")}
                     alt="..."
                   />
@@ -162,7 +147,7 @@ export default function Home() {
               <Card body className="size bs">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
-                    className="img-fluid rounded-circle mb-3"
+                    className="test-img img-fluid rounded-circle mb-3"
                     src={require("../../assets/img/rk.jpg")}
                     alt="..."
                   />
@@ -185,7 +170,7 @@ export default function Home() {
               <Card body className="size bs">
                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
                   <img
-                    className="img-fluid rounded-circle mb-3"
+                    className="test-img img-fluid rounded-circle mb-3"
                     src={require("../../assets/img/angali.jpg")}
                     alt="..."
                   />

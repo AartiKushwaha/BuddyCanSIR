@@ -96,6 +96,18 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.img-custom{
+  background: url("https://www.stjudechild.org/images/what/1wt.jpg");
+}
+
+.img-custom1{
+  background: url("https://www.stjudechild.org/images/what/8wt.jpg");
+}
+
+.img-custom2{
+  background: url("https://www.stjudechild.org/images/what/5wt.jpg");
+}
+
 
 
 hr {
@@ -730,7 +742,7 @@ progress {
 }
 
 .borderCard {
-  width: 40vw;
+  height: 26rem;
 }
 
 /*.right {*/
@@ -11426,7 +11438,7 @@ header.masthead h1, header.masthead .h1 {
   padding: 0;
 }
 .showcase .showcase-img {
-  min-height:20rem;
+  height:26rem;
   background-size: cover;
 }
 @media (min-width: 768px) {
@@ -11533,4 +11545,10 @@ footer.footer {
 
 .wid {
   width: 80%;
+}
+
+@media (min-width:992px) and (max-width:1200px){
+  .test-img{
+    height: 115px;
+  }
 }
