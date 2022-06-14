@@ -16,7 +16,7 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
   }
   
   .step-indicator .step-icon {
@@ -33,7 +33,7 @@
   }
   
   .step.active .step-icon {
-    background: crimson;
+    background: #3AB255;
   }
   
   .step p {
@@ -46,7 +46,7 @@
   }
   
   .step.active p {
-    color: crimson;
+    color: #3AB255;
   }
   
   .step.step2 p,
@@ -65,5 +65,19 @@
     .step p {
       font-size: 11px;
       bottom: -20px;
+    }
+    .step.step2 p,
+  .step.step1 p {
+    left: 10px;
+    transform: translateY(100%);
+  }
+  .request-div {
+    margin: 20px;
+  }
+  }
+
+  @media (max-width: 768px){
+    .indicator-container {
+      margin-top: 0px;
     }
   }

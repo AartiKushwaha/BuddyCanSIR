@@ -40,3 +40,9 @@
     object-fit: cover;
     cursor: pointer;
 }
+
+@media (max-width: 450px) {
+    .navbar-collapse{
+        padding: 20px;
+    }
+}

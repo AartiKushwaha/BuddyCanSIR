@@ -28,12 +28,12 @@ export default function Card({ item, s, u }) {
     const [st, setStatus] = useState("");
 
     const handleSubmit = async (e) => {
-        // emailjs.sendForm('service_drh1vjr', 'template_fuy3c0f', form.current, 'rhxW1IurDw92Ef1Zy')
-        //   .then((result) => {
-        //       console.log(result.text);
-        //   }, (error) => {
-        //       console.log(error.text);
-        //   });
+        emailjs.sendForm('service_drh1vjr', 'template_fuy3c0f', form.current, 'rhxW1IurDw92Ef1Zy')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
         if (decision === "deny") {
             setStatus("closed");
             const updateRequest = {
@@ -72,10 +72,10 @@ export default function Card({ item, s, u }) {
 
     const handleMsg = async () => {
         try {
-          axios.post("/msg", {
-            to: `${phone}`,
-            message: "Your application status has been changed. Visit portal for further information.",
-          });
+        //   axios.post("/msg", {
+        //     to: `${phone}`,
+        //     message: "Your application status has been changed. Visit portal for further information.",
+        //   });
         } catch (err) {
     
         }
@@ -109,27 +109,27 @@ export default function Card({ item, s, u }) {
                                 <li>
                                     {item.marksheet != "" ?
                                         <a className="doc-link" href={item.marksheet} target="_blank">
-                                            Marksheet
+                                            Document 1
                                         </a>
                                         : <></>}
                                     {item.funded_doc != "" ?
                                         <a className="doc-link" href={item.funded_doc} target="_blank">
-                                            Prior Funds
+                                            Document 2
                                         </a>
                                         : <></>}
                                     {item.attendance_record != "" ?
                                         <a className="doc-link" href={item.attendance_record} target="_blank">
-                                            Attendance Record
+                                            Document 3
                                         </a>
                                         : <></>}
                                     {item.education_fee_record != "" ?
                                         <a className="doc-link" href={item.education_fee_record} target="_blank">
-                                            Fee Record
+                                           Document 4
                                         </a>
                                         : <></>}
                                     {item.hospital_doc != "" ?
                                         <a className="doc-link" href={item.hospital_doc} target="_blank">
-                                            Hospital Documents
+                                            Document 5
                                         </a>
                                         : <></>}
                                 </li>

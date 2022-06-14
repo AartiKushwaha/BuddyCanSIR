@@ -14,6 +14,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins&display=swap');
+.header-heading {
+  border-bottom: 5px solid white;
+    line-height: 110px;
+    font-weight: bold;
+    font-size: 80px;
+    /* text-shadow: 3px 3px 10px #ff8b26e3; */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000, 1px 2px 0 #000;
+}
+
+.vmi {
+  padding: 40px 60px;
+}
+
+.tagline {
+  text-transform: capitalize;
+    font-size: 25px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 2px 0 #000, 1px 2px 0 #000;
+}
+
+.section2 {
+  padding: 50px 100px 130px;
+}
+
+.img-section {
+  position: relative;
+  background-color: #343a40;
+  background: url("https://images.unsplash.com/flagged/photo-1574097656146-0b43b7660cb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") no-repeat center center;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mission{
+  background-color: white;
+}
+
+.category-heading {
+  text-align: center;
+  font-size: 25px;
+}
+
+.mission-heading, .help-heading {
+  font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: lighter;
+    padding-top: 50px;
+    line-height: 80px;
+}
+
+.mission-heading {
+  border-bottom: 2px solid black;
+}
+
+.mission-content {
+  font-size: 20px;
+  height: 250px;
+    text-align: justify;
+}
+
 .navbar{
   z-index: 1;
 }
@@ -97,14 +162,20 @@ body {
 }
 
 .img-custom{
+  height: 100%;
+    width: 100%;
   background: url("https://www.stjudechild.org/images/what/1wt.jpg");
 }
 
 .img-custom1{
+  height: 100%;
+    width: 100%;
   background: url("https://www.stjudechild.org/images/what/8wt.jpg");
 }
 
 .img-custom2{
+  height: 100%;
+    width: 100%;
   background: url("https://www.stjudechild.org/images/what/5wt.jpg");
 }
 
@@ -827,6 +898,7 @@ progress {
 .col-6 {
   flex: 0 0 auto;
   width: 50%;
+  padding: 0;
 }
 
 .col-7 {
@@ -1464,6 +1536,7 @@ progress {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+    padding: 30px;
   }
 
   .col-lg-7 {
@@ -7770,7 +7843,6 @@ textarea.form-control-lg {
 
 .text-center {
   text-align:center  !important;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .text-decoration-none {
@@ -11404,9 +11476,13 @@ header.masthead {
   background-color: #343a40;
   background: url("./../../assets/img/bgimg1.png") no-repeat center center;
   background-size: cover;
-  padding-top: 6rem;
+  padding-top: 45%;
   padding-bottom: 8rem;
-  height: 90vh;
+  height: 95vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header.masthead:before {
@@ -11419,23 +11495,11 @@ header.masthead:before {
   left: 0;
   opacity: 0.5;
 }
-header.masthead h1, header.masthead .h1 {
-  font-size: 3rem;
-}
-/* header.masthead h4{
-  font-size: 1rem;
-} */
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
+    padding-top: 300px;
     padding-bottom: 12rem;
   }
-  header.masthead h1, header.masthead .h1 {
-    font-size: 5rem;
-  }
-  /* header.masthead h4{
-    font-size: 2rem;
-  } */
 }
 
 
@@ -11462,12 +11526,12 @@ header.masthead h1, header.masthead .h1 {
 }
 .testimonials .testimonial-item img {
   max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
+  /* box-shadow: 0px 5px 5px 0px #adb5bd; */
 }
 
-.pad-rk {
+/* .pad-rk {
   padding-top:18px;
-}
+} */
 
 .pad-rk hr {
   border: none;
@@ -11512,7 +11576,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .bs {
-  box-shadow: 5px 5px 8px 5px rgba(56, 54, 54, 0.37);
+  box-shadow: 5px 5px 8px 5px rgb(191 191 191 / 37%);
 }
 
 .call-to-action {
@@ -11541,6 +11605,86 @@ footer.footer {
 
 .pd {
   padding: 40px;
+}
+.pn_testimonial_box {
+  font-weight: 300;
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid green;
+  position: relative;
+  transition: 1s;
+  transform: scale(0.9);
+  background-color: #fff;
+  -webkit-border-radius: 4rem;
+  -moz-border-radius: 4rem;
+  -ms-border-radius: 4rem;
+  border-radius: 4rem;
+}
+.pn_testimonial_box:hover {
+  box-shadow: 2px 4px 8px #d6d8da;
+  border: 1px solid #fff;
+  transform: scale(1);
+  position: relative;
+  z-index: 1;
+}
+.pn_review_rating img {
+  width: 20%;
+}
+.pn_review_profile img {
+  position: absolute;
+  margin: -1rem -5rem 0;
+}
+.pn_review_profile span {
+  position: absolute;
+}
+
+.img-vmi {
+  padding: 0;
+}
+
+
+@media (max-width: 575px) {
+    .pn_reviews {
+        padding: 3rem 0;
+    }
+    .pn_reviews h1 {
+        font-size: 2rem;
+        padding-bottom: 1rem !important;
+    }
+    .pn_testimonial_box {
+        padding: 2rem;
+        margin: 1rem;
+        border: 1px solid #405fbd;
+        position: relative;
+        -webkit-border-radius: 4rem;
+        -moz-border-radius: 4rem;
+        -ms-border-radius: 4rem;
+        border-radius: 4rem;
+    }
+    .pn_review_profile img {
+        position: absolute;
+        margin: -1.1rem -3rem 0;
+    }
+    .pn_review_profile span {
+        position: absolute;
+        padding: 1rem;
+    }
+    .pn_review_rating img {
+        width: auto;
+    }
+}
+
+
+@media (max-width:625px){
+  .header-heading {
+    font-size: 40px;
+  }
+  .vmi {
+    padding: 0 20px;
+  }
+  .section2 {
+    padding: 10px;
+  }
 }
 
 @media(min-width:200px) {

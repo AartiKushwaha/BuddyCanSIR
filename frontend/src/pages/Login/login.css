@@ -78,7 +78,7 @@ input[type=email], input[type=password]{
 }
 @media (max-width: 425px){
     .login {
-        padding-top: 30px;
+        padding-top: 120px;
     }
     .login-container {
         width: 90%;

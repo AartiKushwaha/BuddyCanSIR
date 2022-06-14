@@ -86,7 +86,7 @@ export default function Profile() {
       {updateMode ? (
         <form className="settingsForm" onSubmit={handleSubmit}>
           <section className="image">
-            <div className="container py-5">
+            <div className="container profile-container">
               <div className="row">
                 <div className="col-lg-4">
                   <div className="card mb-4">
@@ -214,7 +214,7 @@ export default function Profile() {
         </form>
       ) : (
         <section className="image">
-          <div className="container py-5">
+          <div className="container profile-container">
             <div className="row">
               <div className="col-lg-4">
                 <div className="card mb-4">

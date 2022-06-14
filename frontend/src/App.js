@@ -5,6 +5,7 @@ import Register from "./pages/Register/Register";
 import Admin from "./pages/Admin/Admin";
 import Request from "./pages/Request/Request";
 import Profile from "./pages/Profile/Profile";
+import Guide from "./pages/Guide/Guide";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/admin" element={<Admin />} />
         <Route exact path="/request" element={<Request />} />
         <Route exact path="/profile/:userId" element={<Profile />} />
+        <Route exact path="/guide" element={<Guide />} />
       </Routes>
     </Router>
   );
