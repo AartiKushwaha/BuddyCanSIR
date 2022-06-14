@@ -48,19 +48,18 @@
 <a id="overview"></a>
 ## 📖 Application Overview
 ### Home Page
-![Home Page1](https://user-images.githubusercontent.com/77791154/173409996-330f4b8c-b982-48f9-bead-dbef4be4bc80.png)
-![Home Page2](https://user-images.githubusercontent.com/77791154/173410091-dd856669-f5f3-433c-980b-9b241eb81c6c.png)
-![Chatbot](https://user-images.githubusercontent.com/77791154/173410243-0efbfce8-a207-4855-a599-82c496dd49ad.png)
+![Home Page](https://user-images.githubusercontent.com/77791154/173556685-9364e308-8c07-483a-9955-17ac9911e584.png)
+![Home Page2](https://user-images.githubusercontent.com/77791154/173556906-0a89f691-998c-476e-861a-e7a59c1ce5d1.png)
 ### Login Page 
-![Login Page](https://user-images.githubusercontent.com/77791154/173410313-81ccea8a-58dc-455e-9f4f-e5a033d2c64f.png)
+![Login Page](https://user-images.githubusercontent.com/77791154/173557000-fea12c26-da74-45a5-bde6-703419884ab9.png)
 ### New user Registeration Page
-![Register Page](https://user-images.githubusercontent.com/77791154/173410379-93d1794a-5f4d-4d61-9360-ea7a12dc0cae.png)
+![Register Page](https://user-images.githubusercontent.com/77791154/173557042-915019cf-aec1-403c-982a-4576e833779a.png)
 ### Admin Page
-![admin page](https://user-images.githubusercontent.com/77791154/173410488-cf908187-0d7a-40a9-8798-67e025794d26.png)
+![Admin page](https://user-images.githubusercontent.com/77791154/173557069-a119d18c-769e-48a8-9b56-12bb4beaa842.png)
 ### Request Page
-![Req Page](https://user-images.githubusercontent.com/77791154/173414160-baa27d1b-6cfb-46dc-9871-b34a5d8a4e7f.png)
+![Request Page](https://user-images.githubusercontent.com/77791154/173557114-c289ffbd-9b46-48f4-9a81-2ae444a202b4.png)
 ### Profile Page
-![Profile Page](https://user-images.githubusercontent.com/77791154/173410548-7e68168e-abbc-4c64-8788-09a7a470fdc2.png)
+![Profile Page](https://user-images.githubusercontent.com/77791154/173557140-1b12d967-d4ed-4ddd-ab64-3fcb55c13430.png)
 
 <a id="learning"></a>
 ## 💡 Learnings
