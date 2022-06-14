@@ -15,7 +15,7 @@ export default function Navigation() {
   };
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
+      <div className="container-fluid nav-bg" style={{backgroundColor: "white"}}>
         <a href="/" className="navbar-brand">
           <img
             src={logo}
@@ -23,6 +23,12 @@ export default function Navigation() {
             alt="{logo}"
           />
         </a>
+          <div className="navbar-nav">
+            <Link className="nav-item nav-link active" to="/">
+              {" "}
+              <h4>BuddyCanSIR</h4>{" "}
+            </Link>
+          </div>
         <button
           type="button"
           className="navbar-toggler"
@@ -32,12 +38,6 @@ export default function Navigation() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav">
-            <Link className="nav-item nav-link active" to="/">
-              {" "}
-              <h4>BuddyCanSIR</h4>{" "}
-            </Link>
-          </div>
           <div className="navbar-nav ms-auto">
             
 
@@ -53,6 +53,9 @@ export default function Navigation() {
                 </> : <Link className="nav-item nav-link dropdown custom" to="/request">
                   Request
                 </Link>}
+                <Link className="nav-item nav-link dropdown custom" to="/guide">
+              Guide
+            </Link>
                 <Link
                   className="nav-item nav-link dropdown dropdown-pull-right"
                   to="/"
@@ -95,12 +98,18 @@ export default function Navigation() {
                   Logout
                 </li> */}
               </>
-            ) : (
+            ) : (<>
               <li>
                 <Link className="nav-item nav-link dropdown custom" to="/login">
                   Login
                 </Link>
               </li>
+              <li>
+                <Link className="nav-item nav-link dropdown custom" to="/guide">
+              Guide
+            </Link>
+            </li>
+            </>
             )}
           </div>
         </div>

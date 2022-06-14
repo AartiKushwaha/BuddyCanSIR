@@ -1,3 +1,13 @@
+.goog-te-combo {
+    height: 40px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.goog-te-combo:focus {
+    outline: none;
+}
+
 .admin-container {
     height: 100%;
     width: 100vw;
@@ -57,6 +67,7 @@ label {
 
 .users-list {
     margin-right: 10px;
+    padding-top: 90px;
 }
 
 /* ---Sidebar css */
@@ -153,6 +164,15 @@ label {
 .filter-btn {
     position: fixed;
     margin-left: 40px;
+}
+
+.admin-filter-link {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color: black;
+    margin: 10px 0 10px 10px;
+    padding-bottom: 3px;
+    line-height: 35px;
 }
 
 @media (max-width: 730px){

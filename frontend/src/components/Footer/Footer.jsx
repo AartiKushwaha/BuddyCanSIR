@@ -89,6 +89,12 @@ export default function Footer() {
                     Contact Us
                     <span />
                   </h5>
+                  <p>Address: St. Jude India ChildCare Centres
+                    Cotton Green Campus,
+                    Ground Floor, Mumbai Port Trust Colony,
+                    ABC Colony (Rajas Nagar),
+                    Zakaria Bunder Road,
+                    Sewri, Mumbai 400015.</p>
                   <ul className="social-footer2">
                     <li className>
                       <a
@@ -99,7 +105,7 @@ export default function Footer() {
                       </a>
                     </li>
                     <li className>
-                      <a title="Mail" href="https://contact@stjudechild.org">
+                      <a title="Mail" href="mailto:punerva21@gmail.com">
                         <FontAwesomeIcon icon={faEnvelopeOpen} />
                       </a>
                     </li>

@@ -8,57 +8,6 @@ import Indicator from "../../components/Indicator/Indicator";
 
 export default function Request() {
   const { user } = useContext(Context);
- 
-  // state = {
-    // text: {
-    //   recepient: '+918630522163',
-    //   textmessage: "Your request has been approved!!"
-    // }
-  // }
-
-  // const [reason, setReason] = useState("");
-  // const [agree, setAgree] = useState(false);
-  // const [agree2, setAgree2] = useState(false);
-  // const [agree3, setAgree3] = useState(false);
-
-  // const canBeSubmitted = () => {
-  //   const isValid =
-  //     track.trim().length &&
-  //     category.trim().length &&
-  //     reason.trim().length &&
-  //     agree && agree2 && agree3;
-
-  //   if (isValid) {
-  //     document.getElementById("submitButton").removeAttribute("disabled");
-  //     document.getElementById("submitButton").style.background = "#3AB255";
-  //     document.getElementById("submitButton").style.cursor = "pointer";
-  //   } else {
-  //     document.getElementById("submitButton").setAttribute("disabled", true);
-  //   }
-  //   console.log(track, category)
-  // };
-
-  // useEffect(() => canBeSubmitted());
-
-  // const [marksheet, setMarksheet] = useState("");
-  // const [attendance, setAttendance] = useState("");
-  // const [medical, setMedical] = useState("");
-
-  // const canBeSubmitted2 = () => {
-  //   const isValidForm =
-  //     marksheet && attendance && medical
-
-  //   if (isValidForm) {
-  //     document.getElementById("nextButton").removeAttribute("disabled");
-  //     document.getElementById("nextButton").style.background = "#3AB255";
-  //     document.getElementById("nextButton").style.cursor = "pointer";
-  //   } else {
-  //     document.getElementById("nextButton").setAttribute("disabled", true);
-  //   }
-  // };
-
-  // useEffect(() => canBeSubmitted2());
-
 
   const [status, setStatus] = useState("");
   const [rid, setRid] = useState("");
@@ -125,13 +74,33 @@ export default function Request() {
     }
   }
 
-  const handleDocUpload = async () => {
+  const [file, setFile] = useState("");
+  const [url, setUrl] = useState("");
+
+  console.log(file);
+
+  const uploadImage = () => {
+    const data = new FormData();
+    data.append("file", file);
+    data.append("upload_preset", "pb3pgaem");
+
+    data.append("cloud_name", "dd8m2rptw");
+    axios.post("https://api.cloudinary.com/v1_1/dd8m2rptw/image/upload", data
+    ).then((resp) => resp.json()).then((data) => {
+        setUrl(data.secure_url);
+        console.log(url)
+      })
+      .catch((err) => console.log(err));
+  };
+
+  const handleDocUpload = async (e) => {
+    const init = "https://res.cloudinary.com/dd8m2rptw/image/upload/"
     const updateRequest = {
-      funded_doc: "https://cloudinary.com/documentation/image_video_and_file_upload",
-      marksheet: "https://cloudinary.com/documentation/image_video_and_file_upload",
-      attendance_record: "https://cloudinary.com/documentation/image_video_and_file_upload",
-      education_fee_record: "https://cloudinary.com/documentation/image_video_and_file_upload",
-      hospital_doc: "https://cloudinary.com/documentation/image_video_and_file_upload",
+      funded_doc: init+"v1655131406/h49yndlk93weuszvr5nq.jpg",
+      marksheet: init+"v1655131539/avtjuksn6ftiwi8rgys4.jpg",
+      attendance_record: init+"v1655131113/m9lhnfdaydd1luioccdt.jpg",
+      education_fee_record: init+"v1655130809/xdnghalbvsfzjmysdkpz.jpg",
+      hospital_doc: init+"v1655131709/bz6pvc6ere7gymlfdgx2.jpg",
       status: "doc_uploaded"
     };
     try {
@@ -242,71 +211,23 @@ export default function Request() {
           <p className="req-text-center">Your request has been verified. Please upload the following documents.</p>
 
           {/* Forms section */}
-            <form onSubmit={handleDocSubmit}>
+          <form onSubmit={handleDocSubmit}>
               <div className="file-upload">
                   <div className="row">
-                    <div className="col-md-4 col-sm-12 font-text">
-                      <label className="doc-text" htmlFor=""><b>Marksheet: </b></label>
-                    </div>
-                    <div className="col-md-8 col-sm-12 font-text">
-                      <input type="file" id="File1" name="file1"
-                      // onChange={(e) => setMarksheet(e.target.value)} 
-                      />
+                    <div className="">
+                      <label htmlFor="">Marksheet, Attendance Record, Medical Record, College/School fees Record, Funding documents</label>
+                      <label htmlFor="" style={{margin: "15px 0"}}>Current permitted file type: .jpeg, .jpg, .png</label>
+                      <input type="file" onChange={(e) => setFile(e.target.files[0])} multiple/>
+                      <p>
+                      (You have to upload multiple documents here.)
+                      </p>
+                      {/* <button onClick={uploadImage}>upload</button> */}
                     </div>
                   </div>
                 </div>
-
-              <div className="file-upload">
-                  <div className="row">
-                    <div className="col-md-4 col-sm-12 font-text">
-                      <label className="doc-text" htmlFor=""><b>Attendance record: </b></label>
-                    </div>
-                    <div className="col-md-8 col-sm-12">
-                      <input type="file" id="File2" name="file2"
-                      // onChange={(e) => setAttendance(e.target.value)} 
-                      />
-                    </div>
-                  </div>
-              </div>
-              <div className="file-upload">
-                  <div className="row">
-                    <div className="col-md-4 col-sm-12 font-text">
-                      <label className="doc-text" htmlFor=""><b>Medical record: </b></label>
-                    </div>
-                    <div className="col-md-8 col-sm-12">
-                      <input type="file" id="File5" name="file5"
-                      // onChange={(e) => setMedical(e.target.value)} 
-                      />
-                    </div>
-                  </div>
-                </div>
-              <div className="file-upload">
-                  <div className="row">
-                    <div className="col-md-4 col-sm-12 font-text">
-                      <label className="doc-text" htmlFor=""><b>School/College fee record: </b></label>
-                    </div>
-                    <div className="col-md-8 col-sm-12">
-                      <input type="file" id="File3" name="file3"
-                      // onChange={(e) => setAttendance(e.target.value)} 
-                      />
-                    </div>
-                  </div>
-              </div>
-              <div className="file-upload">
-                  <div className="row">
-                    <div className="col-md-4 col-sm-12 font-text">
-                      <label className="doc-text" htmlFor=""><b>Prior funding documents: </b></label>
-                    </div>
-                    <div className="col-md-8 col-sm-12">
-                      <input type="file" id="File4" name="file4"
-                      // onChange={(e) => setAttendance(e.target.value)} 
-                      />
-                    </div>
-                  </div>
-              </div>
               <input type="text" name="user_id" value={user._id} hidden/>
               <div className="center">
-            <button type="submit" className="request-btn doc-text" onClick={handleDocUpload}>Submit</button>
+            <button type="submit" className="request-btn" onClick={handleDocUpload}>Submit</button>
               </div>
             </form>
         </>)
@@ -327,6 +248,7 @@ export default function Request() {
   return (
     <>
       <Navigation />
+      <div className="request-container">
       <p className="info" style={{marginTop:"30px"}}>USER: {user.username}</p>
       <br />
       <p className="info">STATUS: {status}</p>
@@ -334,6 +256,7 @@ export default function Request() {
           <Indicator step={2}/> : <Indicator step={1}/> }
       <div className="request-div">
       {Content()}
+      </div>
       </div>
       <Footer />
     </>
